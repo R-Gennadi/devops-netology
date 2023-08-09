@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/READMY" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/READMY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/will_be_deleted.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "state": "OPEN",
+      "assignee": "R-Gennadi",
+      "reviewState": "REQUIRED"
+    }
+  ],
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "R-Gennadi"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8991af67-fc39-405a-ba5e-3cd4293eebd9" />
+        <option name="url" value="https://github.com/R-Gennadi/devops-netology" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": -1
+}]]></component>
+  <component name="ProjectId" id="2TgsmT8yV77xq3RzVtoOzKNJ0OT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "fix",
+    "last_opened_file_path": "/home/ubuntu/git_my/README.md",
+    "settings.editor.selected.configurable": "preferences.customizations",
+    "two.files.diff.last.used.file": "/home/ubuntu/git_my/README.md"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="" />
+      <created>1691476219114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691476219114</updated>
+    </task>
+    <task id="LOCAL-00001" summary="test PC">
+      <option name="closed" value="true" />
+      <created>1691571128682</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691571128682</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test PC">
+      <option name="closed" value="true" />
+      <created>1691571662491</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691571662491</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test PC" />
+    <option name="LAST_COMMIT_MESSAGE" value="test PC" />
+  </component>
+</project>
