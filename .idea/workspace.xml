@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="" />
+    <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/answer.md" beforeDir="false" afterPath="$PROJECT_DIR$/answer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/virt.md" beforeDir="false" afterPath="$PROJECT_DIR$/virt.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,26 +47,26 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: -1
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
   <component name="ProjectId" id="2TgsmT8yV77xq3RzVtoOzKNJ0OT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "git-rebase",
-    "last_opened_file_path": "/home/ubuntu/git_my/README.md",
-    "settings.editor.selected.configurable": "preferences.customizations",
-    "two.files.diff.last.used.file": "/home/ubuntu/git_my/README.md"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ubuntu/git/git_my&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;/home/ubuntu/git_my/README.md&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -87,7 +92,23 @@
       <option name="project" value="LOCAL" />
       <updated>1691571662491</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test PC">
+      <option name="closed" value="true" />
+      <created>1692356023948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692356023948</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test PC">
+      <option name="closed" value="true" />
+      <created>1692363622424</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692363622424</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
