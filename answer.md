@@ -1,8 +1,8 @@
 1. ответ:
 	 хэш  aefead2207ef7e2aa5dc81a34aedf0cad4c32545
 	 комент  Update CHANGELOG.md
-получен командой: 
-		git show aefea
+получен командой:
+			git show aefea
 в клоне  репозитория Terraform
 
 2.1 ответ:
