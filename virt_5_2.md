@@ -38,17 +38,24 @@ Push-модель надёжней, т.к. централизованно упр
 
 * Vagrant
 
-      PS C:\Users\sergey> vagrant --version
-      Vagrant 2.2.18
+      ubuntu@ubuntu2004:~$  vagrant --version
+      Vagrant 2.3.7
 
 * Terraform
-
-
+  
+      \terraform-docker-demo>terraform -version
+      Terraform v1.5.7
+      on windows_amd64
 
 * Ansible
 
-
-
+      ubuntu@ubuntu2004:~$ ansible --version
+      ansible 2.9.6
+      config file = /etc/ansible/ansible.cfg
+      configured module search path = ['/home/ubuntu/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+      ansible python module location = /usr/lib/python3/dist-packages/ansible
+      executable location = /usr/bin/ansible
+      python version = 3.8.10 (default, May 26 2023, 14:05:08) [GCC 9.4.0]
 
 ## Задача 4:
 
