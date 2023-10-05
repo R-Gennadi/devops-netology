@@ -58,4 +58,22 @@ Push-модель надёжней, т.к. централизованно упр
       python version = 3.8.10 (default, May 26 2023, 14:05:08) [GCC 9.4.0]
 
 ## Задача 4:
+ubuntu@ubuntu2004:~/.vagrant.d/boxes/bento-VAGRANTSLASH-ubuntu-20.04/0/virtualbox$ vagrant ssh
+    Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-162-generic x86_64)
+
+    * Documentation:  https://help.ubuntu.com
+    * Management:     https://landscape.canonical.com
+    * Support:        https://ubuntu.com/advantage
+
+     System information disabled due to load higher than 1.0
+
+      This system is built by the Bento project by Chef Software
+      More information can be found at https://github.com/chef/bento
+      Last login: Thu Oct  5 10:27:53 2023 from 10.0.2.2
+
+vagrant@vagrant:~$ sudo docker ps
+
+      CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+  
 
