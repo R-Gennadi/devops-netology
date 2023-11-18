@@ -44,9 +44,45 @@
 
  
 ## Задача 3:
-* VirtualBox
+* Запустите первый контейнер из образа centos c любым тегом в фоновом режиме, подключив папку /data из текущей рабочей директории на хостовой машине в /data контейнера.
 
-        C:\Program Files\Oracle\VirtualBox>vboxmanage --version
+        ubuntu@ubuntu2004:~/docker/task3$ docker run -it --rm -d --name centos -v $(pwd)/data:/data centos:latest
+        Unable to find image 'centos:latest' locally
+        latest: Pulling from library/centos
+        a1d0c7532777: Already exists 
+        Digest: sha256:a27fd8080b517143cbbbab9dfb7c8571c40d67d534bbdee55bd6c473f432b177
+        Status: Downloaded newer image for centos:latest
+        3571732113adf734c09e5adb18c83f423503da5b1e1c64fac241fac65a283316
+
+* Запустите второй контейнер из образа debian в фоновом режиме, подключив папку /data из текущей рабочей директории на хостовой машине в /data контейнера.
+
+      ubuntu@ubuntu2004:~/docker/task3$ docker run -it --rm -d --name debian -v $(pwd)/data:/data debian:latest
+      Unable to find image 'debian:latest' locally
+      latest: Pulling from library/debian
+      8457fd5474e7: Pull complete 
+      Digest: sha256:fab22df37377621693c68650b06680c0d8f7c6bf816ec92637944778db3ca2c0
+      Status: Downloaded newer image for debian:latest
+      70f9b733bd2fb532d2ab19f34f51717483bcd054b63bc5f1af75c60ff03feea6
+
+* Подключитесь к первому контейнеру с помощью docker exec и создайте текстовый файл любого содержания в /data.
+
+      ubuntu@ubuntu2004:~/docker/task3$ docker exec -it centos bash
+      [root@3571732113ad /]# echo "This file to CentOS" >> /data/centos.txt
+      [root@3571732113ad /]# exit
+      exit
+
+* Добавьте ещё один файл в папку /data на хостовой машине.
+
+      ubuntu@ubuntu2004:~/docker/task3$ echo "This file to host" >> data/host.txt
+
+* Подключитесь во второй контейнер и отобразите листинг и содержание файлов в /data контейнера.
+
+        ubuntu@ubuntu2004:~/docker/task3$ docker exec -it debian bash
+        root@70f9b733bd2f:/# ls -l /data/
+        total 8
+        -rw-r--r-- 1 root root 20 Nov 18 18:55 centos.txt
+        -rw-rw-r-- 1 1000 1000 18 Nov 18 18:59 host.txt
+  
 
 ## Задача 4:
 sfd
