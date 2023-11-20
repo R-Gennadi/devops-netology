@@ -13,8 +13,10 @@
 Создайте вашу первую виртуальную машину в YandexCloud с помощью Terraform (вместо использования веб-интерфейса YandexCloud). Используйте Terraform-код в директории (src/terraform).
 Чтобы получить зачёт, вам нужно предоставить вывод команды terraform apply и страницы свойств, созданной ВМ из личного кабинета YandexCloud. 
 
-вывод команды terraform apply
+
 <details>
+<summary>вывод команды terraform apply</summary>
+
 ubuntu@ubuntu2004:~/cloud/terra/1$ terraform apply
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
