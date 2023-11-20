@@ -3,16 +3,16 @@
 Чтобы получить зачёт, вам нужно предоставить скриншот страницы с созданным образом из личного кабинета YandexCloud.
  
 ![img.png](/img/img.png)
-<image src="/img/img.png" alt="ris1">
+
 
 ## Задача 2:
 > 2.1. Создайте вашу первую виртуальную машину в YandexCloud с помощью web-интерфейса YandexCloud.
-![img_1.png](/img/img_1.png)
+
+<image src="/img/img_1.png" alt="ris2">
 
 > 2.2. *(Необязательное задание)
 Создайте вашу первую виртуальную машину в YandexCloud с помощью Terraform (вместо использования веб-интерфейса YandexCloud). Используйте Terraform-код в директории (src/terraform).
 Чтобы получить зачёт, вам нужно предоставить вывод команды terraform apply и страницы свойств, созданной ВМ из личного кабинета YandexCloud. 
-
 
 <details>
 <summary>вывод команды terraform apply</summary>
@@ -24,7 +24,7 @@ Terraform used the selected providers to generate the following execution plan. 
 
 Terraform will perform the following actions:
 
-  # yandex_compute_instance.node01 will be created
+    # yandex_compute_instance.node01 will be created
   + resource "yandex_compute_instance" "node01" {
       + allow_stopping_for_update = true
       + created_at                = (known after apply)
