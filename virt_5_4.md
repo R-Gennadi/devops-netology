@@ -13,6 +13,8 @@
 Создайте вашу первую виртуальную машину в YandexCloud с помощью Terraform (вместо использования веб-интерфейса YandexCloud). Используйте Terraform-код в директории (src/terraform).
 Чтобы получить зачёт, вам нужно предоставить вывод команды terraform apply и страницы свойств, созданной ВМ из личного кабинета YandexCloud. 
 
+вывод команды terraform apply
+<details>
 ubuntu@ubuntu2004:~/cloud/terra/1$ terraform apply
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
@@ -138,7 +140,7 @@ Outputs:
 
 external_ip_address_node01_yandex_cloud = "158.160.62.32"
 internal_ip_address_node01_yandex_cloud = "192.168.101.24"
- 
+</details> 
 
  ![img_2.png](/img/img_2.png)
           
