@@ -51,17 +51,26 @@ yikkf7tik9momi48ykk8xg948     node06.netology.yc   Ready     Active             
 * Создайте ваш первый, готовый к боевой эксплуатации кластер мониторинга, состоящий из стека микросервисов.
 > Чтобы получить зачёт, предоставьте скриншот из терминала (консоли), с выводом команды:
 
-    f02332492fa3   gcr.io/cadvisor/cadvisor:v0.47.0   "/usr/bin/cadvisor -…"   7 minutes ago   Up 7 minutes (healthy)   8080/tcp                                                                           cadvisor
+  > ```
+> docker service ls
+> ```
 
-  
+</details>
 
-## Задача 4:
-* Откройте веб-браузер, зайдите на страницу http://<внешний_ip_адрес_вашей_ВМ>:3000.
-Используйте для авторизации логин и пароль из .env-file.
-Изучите доступный интерфейс, найдите в интерфейсе автоматически созданные docker-compose-панели с графиками(dashboards).
-Подождите 5-10 минут, чтобы система мониторинга успела накопить данные.
-Чтобы получить зачёт, предоставьте:
-скриншот работающего веб-интерфейса Grafana с текущими метриками, как на примере
+```bash
+
+[centos@node01 ~]$ sudo docker service ls
+ID             NAME                                MODE         REPLICAS   IMAGE                                          PORTS
+zyhnp7uq0jzg   swarm_monitoring_alertmanager       replicated   1/1        stefanprodan/swarmprom-alertmanager:v0.14.0    
+4ao61u6luas6   swarm_monitoring_caddy              replicated   1/1        stefanprodan/caddy:latest                      *:3000->3000/tcp, *:9090->9090/tcp, *:9093-9094->9093-9094/tcp
+jmfn60a9px6q   swarm_monitoring_cadvisor           global       6/6        google/cadvisor:latest                         
+xpvxu06tdcig   swarm_monitoring_dockerd-exporter   global       6/6        stefanprodan/caddy:latest                      
+o7w977pq40q5   swarm_monitoring_grafana            replicated   1/1        stefanprodan/swarmprom-grafana:5.3.4           
+1pz42xezh3y5   swarm_monitoring_node-exporter      global       6/6        stefanprodan/swarmprom-node-exporter:v0.16.0   
+jlry4dz7baxn   swarm_monitoring_prometheus         replicated   1/1        stefanprodan/swarmprom-prometheus:v2.5.0       
+vgn0t5co5j5f   swarm_monitoring_unsee              replicated   1/1        cloudflare/unsee:v0.8.0        
+ 
+```
 
 
 
