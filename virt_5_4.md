@@ -152,9 +152,16 @@ internal_ip_address_node01_yandex_cloud = "192.168.101.24"
 Используйте Ansible-код в директории (src/ansible).
 Чтобы получить зачёт, вам нужно предоставить вывод команды "docker ps" , все контейнеры, описанные в docker-compose, должны быть в статусе "Up".
 
-        ubuntu@ubuntu2004:~/docker/task3$ docker run -it --rm -d --name centos -v $(pwd)/data:/data centos:latest
-        Unable to find image 'centos:latest' locally
-        latest: Pulling from library/centos
+        [debian@node02 ~]$ sudo docker ps
+        CONTAINER ID   IMAGE                              COMMAND                  CREATED         STATUS                   PORTS                                                                              NAMES
+        ae448d009ee2   prom/pushgateway:v1.2.0            "/bin/pushgateway"       7 minutes ago   Up 7 minutes             9091/tcp                                                                           pushgateway
+        03694477cb5d   grafana/grafana:7.4.2              "/run.sh"                7 minutes ago   Up 7 minutes             3000/tcp                                                                           grafana
+        298303eb4f76   prom/prometheus:v2.17.1            "/bin/prometheus --c…"   7 minutes ago   Up 7 minutes             9090/tcp                                                                           prometheus
+        75cec169d566   prom/node-exporter:v0.18.1         "/bin/node_exporter …"   7 minutes ago   Up 7 minutes             9100/tcp                                                                           nodeexporter
+        0ddf653d46ef   stefanprodan/caddy                 "/sbin/tini -- caddy…"   7 minutes ago   Up 7 minutes             0.0.0.0:3000->3000/tcp, 0.0.0.0:9090-9091->9090-9091/tcp, 0.0.0.0:9093->9093/tcp   caddy
+        b9a1d7c1da6b   prom/alertmanager:v0.20.0          "/bin/alertmanager -…"   7 minutes ago   Up 7 minutes             9093/tcp                                                                           alertmanager
+        f02332492fa3   gcr.io/cadvisor/cadvisor:v0.47.0   "/usr/bin/cadvisor -…"   7 minutes ago   Up 7 minutes (healthy)   8080/tcp                                                                           cadvisor
+
   
 
 ## Задача 4:
@@ -163,14 +170,8 @@ internal_ip_address_node01_yandex_cloud = "192.168.101.24"
 Изучите доступный интерфейс, найдите в интерфейсе автоматически созданные docker-compose-панели с графиками(dashboards).
 Подождите 5-10 минут, чтобы система мониторинга успела накопить данные.
 Чтобы получить зачёт, предоставьте:
-
 скриншот работающего веб-интерфейса Grafana с текущими метриками, как на примере
 
-      docker pull repgen/netology-rg:v3
+      <image src="/img/img_3.png" alt="ris3">
 
-## Задача 5:
-*Создайте вторую ВМ и подключите её к мониторингу, развёрнутому на первом сервере.
-Чтобы получить зачёт, предоставьте: скриншот из Grafana, на котором будут отображаться метрики добавленного вами сервера. 
-
-      docker pull repgen/netology-rg:v3
 
