@@ -172,6 +172,6 @@ internal_ip_address_node01_yandex_cloud = "192.168.101.24"
 Чтобы получить зачёт, предоставьте:
 скриншот работающего веб-интерфейса Grafana с текущими метриками, как на примере
 
-      <image src="/img/img_3.png" alt="ris3">
+<image src="/img/img_3.png" alt="ris3">
 
 
