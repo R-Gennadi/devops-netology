@@ -70,7 +70,7 @@ ubuntu@ubuntu2004:~/cloud/01$ ls -Ra
 ./.terraform/providers/registry.terraform.io/kreuzwerker/docker:
 .  ..  3.0.2
 
-./.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2:
+./.terraform/providers/regi[Terr_1.md](Terr_1.md)stry.terraform.io/kreuzwerker/docker/3.0.2:
 .  ..  linux_amd64
 
 ./.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/linux_amd64:
@@ -180,4 +180,4 @@ ubuntu@ubuntu2004:~/cloud/01$ cat terraform.tfstate
 * 8. Объясните, почему при этом не был удалён docker-образ nginx:latest. 
 Ответ обязательно подкрепите строчкой из документации terraform провайдера docker. (ищите в классификаторе resource docker_image )
 
-![](/home/ubuntu/git/git_my/Terra/Img/img5.png)
+![](/Img/img5.png)
