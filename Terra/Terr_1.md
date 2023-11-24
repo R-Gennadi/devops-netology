@@ -1,8 +1,6 @@
 # Домашнее задание к занятию «Введение в Terraform»
 
-## Задача 1
-
-> Чек-лист готовности к домашнему заданию
+## Чек-лист готовности к домашнему заданию
 * 1. Скачайте и установите Terraform версии =1.5.Х (версия 1.6 может вызывать проблемы с Яндекс провайдером) . Приложите скриншот вывода команды terraform --version
 
 ![img.png](Img/img.png)
@@ -37,6 +35,68 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 Login Succeeded
 ```    
 
+## Задание 1
+* 1. Перейдите в каталог src. Скачайте все необходимые зависимости, использованные в проекте.
+
+```bash
+ubuntu@ubuntu2004:~/cloud/01$ ls -Ra
+.:
+.  ..  .gitignore  main.tf  .terraform  .terraform.lock.hcl  .terraformrc  terraform.tfstate
+
+./.terraform:
+.  ..  providers
+
+./.terraform/providers:
+.  ..  registry.terraform.io
+
+./.terraform/providers/registry.terraform.io:
+.  ..  hashicorp  kreuzwerker
+
+./.terraform/providers/registry.terraform.io/hashicorp:
+.  ..  random
+
+./.terraform/providers/registry.terraform.io/hashicorp/random:
+.  ..  3.5.1
+
+./.terraform/providers/registry.terraform.io/hashicorp/random/3.5.1:
+.  ..  linux_amd64
+
+./.terraform/providers/registry.terraform.io/hashicorp/random/3.5.1/linux_amd64:
+.  ..  terraform-provider-random_v3.5.1_x5
+
+./.terraform/providers/registry.terraform.io/kreuzwerker:
+.  ..  docker
+
+./.terraform/providers/registry.terraform.io/kreuzwerker/docker:
+.  ..  3.0.2
+
+./.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2:
+.  ..  linux_amd64
+
+./.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/linux_amd64:
+.  ..  CHANGELOG.md  LICENSE  README.md  terraform-provider-docker_v3.0.2
+```    
+
+* 2. Изучите файл .gitignore. В каком terraform-файле, согласно этому .gitignore, допустимо сохранить личную, секретную информацию?
+
+
+
+* 3. Выполните код проекта. Найдите в state-файле секретное содержимое созданного ресурса random_password, пришлите в качестве ответа конкретный ключ и его значение.
+
+![img_2.png](Img/img_2.png)
+
+    >1 значение
+    >2 ключ
+
+* 4. Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду terraform validate. Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
+
+* 5. Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды docker ps.
+
+* 6. Замените имя docker-контейнера в блоке кода на hello_world. Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". Выполните команду terraform apply -auto-approve. Объясните своими словами, в чём может быть опасность применения ключа -auto-approve. В качестве ответа дополнительно приложите вывод команды docker ps.
+
+* 7. Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.
+
+* 8. Объясните, почему при этом не был удалён docker-образ nginx:latest. Ответ обязательно подкрепите строчкой из документации terraform провайдера docker. (ищите в классификаторе resource docker_image )
 
 
 >  Какой алгоритм выбора лидера используется в Docker Swarm-кластере?
