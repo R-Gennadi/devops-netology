@@ -183,8 +183,4 @@ ubuntu@ubuntu2004:~/cloud/01$ cat terraform.tfstate
 
 ![img.png](Img/img_5.png)
 
-<img src="/home/ubuntu/git/git_my/Terra/Img/img5.png"/>
-
-![img5.png](/Img/img5.png)
-
 ...
