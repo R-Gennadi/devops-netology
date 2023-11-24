@@ -181,3 +181,5 @@ ubuntu@ubuntu2004:~/cloud/01$ cat terraform.tfstate
 Ответ обязательно подкрепите строчкой из документации terraform провайдера docker. (ищите в классификаторе resource docker_image )
 
 ![](/Img/img5.png)
+
+...
