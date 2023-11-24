@@ -90,7 +90,41 @@ ubuntu@ubuntu2004:~/cloud/01$ ls -Ra
     >1 значение
     >2 ключ
 
-* 4. Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду terraform validate. Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
+* 4. Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду terraform validate. 
+Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
+
+> 
+
+```bash
+ubuntu@ubuntu2004:~/cloud/01$ terraform validate
+╷
+1│ Error: Missing name for resource
+│ 
+│   on main.tf line 24, in resource "docker_image":
+│   24: resource "docker_image" {
+│ 
+│ All resource blocks must have 2 labels (type, name).
+╵
+╷
+2 │ Error: Invalid resource name
+│ 
+│   on main.tf line 29, in resource "docker_container" "1nginx":
+│   29: resource "docker_container" "1nginx" {
+│ 
+│ A name must start with a letter or underscore and may contain only letters, digits, underscores, and dashes.
+
+3 Error: Reference to undeclared resource
+│ 
+│   on main.tf line 31, in resource "docker_container" "nginx":
+│   31:   image  = "example_${random_password.random_string_FAKE.resulT}"
+│ 
+│ A managed resource "random_password" "random_string_FAKE" has not been declared in the root module.
+```
+
+    в коде 3 ошибки:
+    1. Отсутствует имя ресурса
+    2. Неверное имя ресурса 
+    3. Ссылка на незадекларированный ресурс
 
 * 5. Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды docker ps.
 
