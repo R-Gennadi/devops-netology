@@ -8,6 +8,7 @@
 ![img.png](Img/img.png)
 
 * 2. Скачайте на свой ПК этот git-репозиторий. Исходный код для выполнения задания расположен в директории 01/src.
+
 ```bash
 ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Ra 01
 01:
@@ -18,9 +19,22 @@ ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Ra 01
 ```    
 
 * 3.  Убедитесь, что в вашей ОС установлен docker.
+
 ```bash
 ubuntu@ubuntu2004:~/cloud/terraform$ docker --version
 Docker version 24.0.7, build afdd53b
+```    
+
+* 4. Зарегистрируйте аккаунт на сайте https://hub.docker.com/, выполните команду docker login и введите логин, пароль. 
+
+```bash
+ubuntu@ubuntu2004:~/cloud/terraform$ docker login
+Authenticating with existing credentials...
+WARNING! Your password will be stored unencrypted in /home/ubuntu/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
 ```    
 
 
