@@ -180,6 +180,9 @@ ubuntu@ubuntu2004:~/cloud/01$ cat terraform.tfstate
 * 8. Объясните, почему при этом не был удалён docker-образ nginx:latest. 
 Ответ обязательно подкрепите строчкой из документации terraform провайдера docker. (ищите в классификаторе resource docker_image )
 
+
+![img.png](Img/img_5.png)
+
 <img src="/home/ubuntu/git/git_my/Terra/Img/img5.png"/>
 
 ![img5.png](/Img/img5.png)
