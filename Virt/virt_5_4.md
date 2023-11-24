@@ -2,7 +2,7 @@
 >Создайте собственный образ любой операционной системы (например, debian-11) с помощью Packer версии 1.7.0 
 Чтобы получить зачёт, вам нужно предоставить скриншот страницы с созданным образом из личного кабинета YandexCloud.
  
-![img.png](/img/img.png)
+![img.png](/Virt/imgt/img/img.png)
 
 
 ## Задача 2:
@@ -144,7 +144,7 @@ external_ip_address_node01_yandex_cloud = "158.160.62.32"
 internal_ip_address_node01_yandex_cloud = "192.168.101.24"
 </details> 
 
- ![img_2.png](/img/img_2.png)
+ ![img_2.png](/Virt/imgt/img/img_2.png)
           
  
 ## Задача 3:
