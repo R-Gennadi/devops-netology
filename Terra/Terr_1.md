@@ -93,40 +93,47 @@ ubuntu@ubuntu2004:~/cloud/01$ ls -Ra
 * 4. Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду terraform validate. 
 Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
 
-> 
+![img_4.png](Img/img_4.png)
 
-```bash
-ubuntu@ubuntu2004:~/cloud/01$ terraform validate
-╷
-1│ Error: Missing name for resource
-│ 
-│   on main.tf line 24, in resource "docker_image":
-│   24: resource "docker_image" {
-│ 
-│ All resource blocks must have 2 labels (type, name).
-╵
-╷
-2 │ Error: Invalid resource name
-│ 
-│   on main.tf line 29, in resource "docker_container" "1nginx":
-│   29: resource "docker_container" "1nginx" {
-│ 
-│ A name must start with a letter or underscore and may contain only letters, digits, underscores, and dashes.
-
-3 Error: Reference to undeclared resource
-│ 
-│   on main.tf line 31, in resource "docker_container" "nginx":
-│   31:   image  = "example_${random_password.random_string_FAKE.resulT}"
-│ 
-│ A managed resource "random_password" "random_string_FAKE" has not been declared in the root module.
-```
-
-    в коде 3 ошибки:
+    в коде 4 ошибки:
     1. Отсутствует имя ресурса
     2. Неверное имя ресурса 
     3. Ссылка на незадекларированный ресурс
+    4. Неверное имя.
 
-* 5. Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды docker ps.
+* 5. Выполните код. В качестве ответа приложите: исправленный 
+ 
+
+>фрагмент кода 
+
+```bash
+resource "docker_image" "latest" {
+  name         = "nginx:latest"
+  keep_locally = true
+}
+
+resource "docker_image" "nginx" {
+  name = "nginx:stable-alpine"
+}
+
+ resource "docker_container" "nginx" {
+  image = docker_image.nginx.image_id
+  name  = "example_${random_password.random_string.result}"
+
+  ports {
+    internal = 80
+    external = 8000
+  }
+```
+
+> и вывод команды docker ps.
+
+```bash
+ubuntu@ubuntu2004:~/cloud/01$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
+fe329a111e2b   e6295d4bbc45   "/docker-entrypoint.…"   3 seconds ago   Up 2 seconds   0.0.0.0:8000->80/tcp   example_6P9JIAU5jb6TqKOB
+```
+
 
 * 6. Замените имя docker-контейнера в блоке кода на hello_world. Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". Выполните команду terraform apply -auto-approve. Объясните своими словами, в чём может быть опасность применения ключа -auto-approve. В качестве ответа дополнительно приложите вывод команды docker ps.
 
