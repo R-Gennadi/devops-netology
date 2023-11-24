@@ -135,65 +135,50 @@ fe329a111e2b   e6295d4bbc45   "/docker-entrypoint.…"   3 seconds ago   Up 2 se
 ```
 
 
-* 6. Замените имя docker-контейнера в блоке кода на hello_world. Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". Выполните команду terraform apply -auto-approve. Объясните своими словами, в чём может быть опасность применения ключа -auto-approve. В качестве ответа дополнительно приложите вывод команды docker ps.
-
-* 7. Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.
-
-* 8. Объясните, почему при этом не был удалён docker-образ nginx:latest. Ответ обязательно подкрепите строчкой из документации terraform провайдера docker. (ищите в классификаторе resource docker_image )
-
-
->  Какой алгоритм выбора лидера используется в Docker Swarm-кластере?
-
- - разработан консенсус алгоритм **Raft**. Он обеспечивает механизм выбора лидера в кластере и синхронизацию состояния контейнеров. 
-Raft в режиме swarm позволяет синхронизировать состояние контейнеров в разных сетях, обеспечивая стабильную работу приложений
-Сам Raft-алгоритм имеет ограничение на количество управляющих нод. Распределенные решения
-должны быть одобрены большинством управляющих узлов, называемых кворумом. Это означает, что рекомендуется нечетное количество управляющих узлов.
-
->  Что такое Overlay Network?
-
-  - **overlay/overlay2** или Оверлей Наложенная сеть это сетевой драйвер для соединения несколько демонов Docker между собой 
-и которые позволяют docker-swarm службам взаимодействовать друг с другом. 
-Также можено использовать оверлейные сети для облегчения связи между docker-swarm и автономным контейнером 
-или между двумя отдельными контейнерами на разных Docker демонах. 
-Эта стратегия устраняет необходимость выполнения маршрутизации на уровне ОС между этими контейнерами
-
-## Задача 2:
-* Создайте ваш первый Docker Swarm-кластер в Яндекс Облаке.
->Чтобы получить зачёт, предоставьте скриншот из терминала (консоли) с выводом команды:
- 
-> ```
-> docker node ls
-> ```
-
-</details>
-
-      
- 
-## Задача 3:
-* Создайте ваш первый, готовый к боевой эксплуатации кластер мониторинга, состоящий из стека микросервисов.
-> Чтобы получить зачёт, предоставьте скриншот из терминала (консоли), с выводом команды:
-
-  > ```
-> docker service ls
-> ```
-
-</details>
+* 6. Замените имя docker-контейнера в блоке кода на hello_world. 
+Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". 
+>Выполните команду terraform apply -auto-approve. 
 
 ```bash
+ubuntu@ubuntu2004:~/cloud/01$ terraform apply -auto-approve
+random_password.random_string: Refreshing state... [id=none]
+docker_image.hello_world: Refreshing state... [id=sha256:e6295d4bbc4559ee7ed2e93830f4228a08af4114d7914db140a026f84e69adbbnginx:stable-alpine]
+docker_image.latest: Refreshing state... [id=sha256:a6bd71f48f6839d9faae1f29d3babef831e76bc213107682c5cc80f0cbb30866nginx:latest]
+docker_container.nginx: Refreshing state... [id=afedafdc2477b6f611fbb63a7ca2d26f50324485cc30663ea89b7084a729d335]
 
-[centos@node01 ~]$ sudo docker service ls
-ID             NAME                                MODE         REPLICAS   IMAGE                                          PORTS
-zyhnp7uq0jzg   swarm_monitoring_alertmanager       replicated   1/1        stefanprodan/swarmprom-alertmanager:v0.14.0    
-4ao61u6luas6   swarm_monitoring_caddy              replicated   1/1        stefanprodan/caddy:latest                      *:3000->3000/tcp, *:9090->9090/tcp, *:9093-9094->9093-9094/tcp
-jmfn60a9px6q   swarm_monitoring_cadvisor           global       6/6        google/cadvisor:latest                         
-xpvxu06tdcig   swarm_monitoring_dockerd-exporter   global       6/6        stefanprodan/caddy:latest                      
-o7w977pq40q5   swarm_monitoring_grafana            replicated   1/1        stefanprodan/swarmprom-grafana:5.3.4           
-1pz42xezh3y5   swarm_monitoring_node-exporter      global       6/6        stefanprodan/swarmprom-node-exporter:v0.16.0   
-jlry4dz7baxn   swarm_monitoring_prometheus         replicated   1/1        stefanprodan/swarmprom-prometheus:v2.5.0       
-vgn0t5co5j5f   swarm_monitoring_unsee              replicated   1/1        cloudflare/unsee:v0.8.0        
- 
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
 ```
 
+> Объясните своими словами, в чём может быть опасность применения ключа -auto-approve. 
 
+- Команда выполняет и применяет изменения к вашей инфраструктуре, не запрашивая одобрения у пользователя 
+Поэтому ошибки могут привести к необратимой потере данных или уничтожению информации.
 
+>В качестве ответа дополнительно приложите вывод команды docker ps.
+```bash
+ubuntu@ubuntu2004:~/cloud/01$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
+afedafdc2477   e6295d4bbc45   "/docker-entrypoint.…"   52 seconds ago   Up 51 seconds   0.0.0.0:8000->80/tcp   example_6P9JIAU5jb6TqKOB
+```
+
+* 7. Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.
+```bash
+ubuntu@ubuntu2004:~/cloud/01$ cat terraform.tfstate
+{
+  "version": 4,
+  "terraform_version": "1.6.4",
+  "serial": 48,
+  "lineage": "f94eab55-3c8f-f95f-9760-624360236297",
+  "outputs": {},
+  "resources": [],
+  "check_results": null
+}
+```
+
+* 8. Объясните, почему при этом не был удалён docker-образ nginx:latest. 
+Ответ обязательно подкрепите строчкой из документации terraform провайдера docker. (ищите в классификаторе resource docker_image )
+
+![img_5.png](Img/img_4.png)
 
