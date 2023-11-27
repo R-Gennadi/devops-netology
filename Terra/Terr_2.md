@@ -34,7 +34,7 @@ ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Ra 02
 * 2. Запросите preview-доступ к этому функционалу в личном кабинете Yandex Cloud. Обычно его выдают в течение 24-х часов. https://console.cloud.yandex.ru/folders/<ваш cloud_id>/vpc/security-groups.
 Этот функционал понадобится к следующей лекции/
 
-
+![img.png](Img_2/img_3.png)
 
 > в отмеченном файле допустимо сохранить личную, секретную информацию
 
