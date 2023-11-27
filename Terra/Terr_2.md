@@ -1,4 +1,4 @@
-# Домашнее задание к занятию «Основы Terraform. Yandex Cloud»
+# Домашнее задание к занятию «Введение в Terraform»
 
 ## Чек-лист готовности к домашнему заданию
 * 1. Зарегистрирован аккаунт в Yandex Cloud. Использован промокод на грант.
@@ -15,226 +15,178 @@ Yandex Cloud CLI 0.113.0 linux/amd64
 * 3.  Исходный код для выполнения задания расположен в директории 02/src.
 
 ```bash
-ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Ra 02
+ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Rla 02
 02:
-.  ..  demostration1.tf  demostration2.tf  hw-02.md  src
+итого 36
+drwxrwxr-x 3 ubuntu ubuntu 4096 ноя 24 05:48 .
+drwxrwxr-x 9 ubuntu ubuntu 4096 ноя 24 05:48 ..
+-rw-rw-r-- 1 ubuntu ubuntu 1860 ноя 24 05:48 demostration1.tf
+-rw-rw-r-- 1 ubuntu ubuntu 4589 ноя 24 05:48 demostration2.tf
+-rw-rw-r-- 1 ubuntu ubuntu 9802 ноя 24 05:48 hw-02.md
+drwxrwxr-x 2 ubuntu ubuntu 4096 ноя 24 05:48 src
 
 02/src:
-.   console.tf  locals.tf  outputs.tf                    providers.tf  variables.tf
-..  .gitignore  main.tf    personal.auto.tfvars_example  terraformrc
+итого 36
+drwxrwxr-x 2 ubuntu ubuntu 4096 ноя 24 05:48 .
+drwxrwxr-x 3 ubuntu ubuntu 4096 ноя 24 05:48 ..
+-rw-rw-r-- 1 ubuntu ubuntu  542 ноя 24 05:48 console.tf
+-rw-rw-r-- 1 ubuntu ubuntu  155 ноя 24 05:48 .gitignore
+-rw-rw-r-- 1 ubuntu ubuntu    0 ноя 24 05:48 locals.tf
+-rw-rw-r-- 1 ubuntu ubuntu  900 ноя 24 05:48 main.tf
+-rw-rw-r-- 1 ubuntu ubuntu    0 ноя 24 05:48 outputs.tf
+-rw-rw-r-- 1 ubuntu ubuntu   42 ноя 24 05:48 personal.auto.tfvars_example
+-rw-rw-r-- 1 ubuntu ubuntu  261 ноя 24 05:48 providers.tf
+-rw-rw-r-- 1 ubuntu ubuntu  205 ноя 24 05:48 terraformrc
+-rw-rw-r-- 1 ubuntu ubuntu 1024 ноя 24 05:48 variables.tf
 ```    
 
 
-## Задание 0
-* 1. Ознакомьтесь с документацией к security-groups в Yandex Cloud.
-
-![img_2.png](Img_2/img_2.png)
-
-
-* 2. Запросите preview-доступ к этому функционалу в личном кабинете Yandex Cloud. Обычно его выдают в течение 24-х часов. https://console.cloud.yandex.ru/folders/<ваш cloud_id>/vpc/security-groups.
-Этот функционал понадобится к следующей лекции/
-
-![img.png](Img_2/img_3.png)
-
 ## Задание 1
-В качестве решения приложите:
-
-* 1. скриншот ЛК Yandex Cloud с созданной ВМ;
-
-![img.png](Img_2/img_4.png)
-
-* 2. скриншот успешного подключения к консоли ВМ через ssh. 
-К OS ubuntu "out of a box, те из коробки" необходимо подключаться под пользователем ubuntu: "ssh ubuntu@vm_ip_address"; 
-
-![img.png](Img_2/img_5.png)
-
-
-* 3. ответы на вопросы
-как в процессе обучения могут пригодиться параметры:
-preemptible = true и core_fraction=5 в параметрах ВМ. Ответ в документации Yandex Cloud
-> при обучении эти параметра иммет смысл ставить минимальными так как уменьшают стоимость
-    
-## Задание 2
-* 1.  Изучите файлы проекта.
-
-![img.png](Img_2/img_6.png)
-
-* 2. Замените все хардкод-значения для ресурсов yandex_compute_image и yandex_compute_instance на отдельные переменные. 
-К названиям переменных ВМ добавьте в начало префикс vm_web_ . Пример: vm_web_name.
-
-![img.png](Img_2/img_7.png)
-
-* 3. Объявите нужные переменные в файле variables.tf, обязательно указывайте тип переменной. 
-Заполните их default прежними значениями из main.tf.
-
-![img.png](Img_2/img_8.png)
-
-* 4. Проверьте terraform plan. Изменений быть не должно
-
-
-<details>
-<summary>вывод команды  terraform plan</summary>
+* 1. Перейдите в каталог src. Скачайте все необходимые зависимости, использованные в проекте.
 
 ```bash
-ubuntu@ubuntu2004:~/cloud/02$
-data.yandex_compute_image.ubuntu_image: Reading...
-data.yandex_compute_image.ubuntu_image: Read complete after 0s [id=fd8b6qcrqbaqtnuumbph]
+ubuntu@ubuntu2004:~/cloud/01$ ls -Ra
+.:
+.  ..  .gitignore  main.tf  .terraform  .terraform.lock.hcl  .terraformrc  terraform.tfstate
 
-Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
-  + create
+./.terraform:
+.  ..  providers
 
-Terraform will perform the following actions:
+./.terraform/providers:
+.  ..  registry.terraform.io
 
-  # yandex_compute_instance.platform_numb will be created
-  + resource "yandex_compute_instance" "platform_numb" {
-      + created_at                = (known after apply)
-      + folder_id                 = (known after apply)
-      + fqdn                      = (known after apply)
-      + gpu_cluster_id            = (known after apply)
-      + hostname                  = (known after apply)
-      + id                        = (known after apply)
-      + metadata                  = {
-          + "serial-port-enable" = "1"
-          + "ssh-keys"           = "ubuntu_image:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDz5P+8JFO+J20Vy4JzoHoHz1tL11ovV/5Ach28RrouA ubuntu@ubuntu2004"
-        }
-      + name                      = "netology-develop-platform-web"
-      + network_acceleration_type = "standard"
-      + platform_id               = "standard-v2"
-      + service_account_id        = (known after apply)
-      + status                    = (known after apply)
-      + zone                      = (known after apply)
+./.terraform/providers/registry.terraform.io:
+.  ..  hashicorp  kreuzwerker
 
-      + boot_disk {
-          + auto_delete = true
-          + device_name = (known after apply)
-          + disk_id     = (known after apply)
-          + mode        = (known after apply)
+./.terraform/providers/registry.terraform.io/hashicorp:
+.  ..  random
 
-          + initialize_params {
-              + block_size  = (known after apply)
-              + description = (known after apply)
-              + image_id    = "fd8b6qcrqbaqtnuumbph"
-              + name        = (known after apply)
-              + size        = (known after apply)
-              + snapshot_id = (known after apply)
-              + type        = "network-hdd"
-            }
-        }
+./.terraform/providers/registry.terraform.io/hashicorp/random:
+.  ..  3.5.1
 
-      + network_interface {
-          + index              = (known after apply)
-          + ip_address         = (known after apply)
-          + ipv4               = true
-          + ipv6               = (known after apply)
-          + ipv6_address       = (known after apply)
-          + mac_address        = (known after apply)
-          + nat                = true
-          + nat_ip_address     = (known after apply)
-          + nat_ip_version     = (known after apply)
-          + security_group_ids = (known after apply)
-          + subnet_id          = (known after apply)
-        }
+./.terraform/providers/registry.terraform.io/hashicorp/random/3.5.1:
+.  ..  linux_amd64
 
-      + resources {
-          + core_fraction = 5
-          + cores         = 2
-          + memory        = 1
-        }
+./.terraform/providers/registry.terraform.io/hashicorp/random/3.5.1/linux_amd64:
+.  ..  terraform-provider-random_v3.5.1_x5
 
-      + scheduling_policy {
-          + preemptible = true
-        }
-    }
+./.terraform/providers/registry.terraform.io/kreuzwerker:
+.  ..  docker
 
-  # yandex_vpc_network.develop will be created
-  + resource "yandex_vpc_network" "develop" {
-      + created_at                = (known after apply)
-      + default_security_group_id = (known after apply)
-      + folder_id                 = (known after apply)
-      + id                        = (known after apply)
-      + labels                    = (known after apply)
-      + name                      = "develop"
-      + subnet_ids                = (known after apply)
-    }
+./.terraform/providers/registry.terraform.io/kreuzwerker/docker:
+.  ..  3.0.2
 
-  # yandex_vpc_subnet.subnet_develop will be created
-  + resource "yandex_vpc_subnet" "subnet_develop" {
-      + created_at     = (known after apply)
-      + folder_id      = (known after apply)
-      + id             = (known after apply)
-      + labels         = (known after apply)
-      + name           = "develop"
-      + network_id     = (known after apply)
-      + v4_cidr_blocks = [
-          + "10.0.1.0/24",
-        ]
-      + v6_cidr_blocks = (known after apply)
-      + zone           = "ru-central1-a"
-    }
+./.terraform/providers/regi[Terr_1.md](Terr_1.md)stry.terraform.io/kreuzwerker/docker/3.0.2:
+.  ..  linux_amd64
 
-Plan: 3 to add, 0 to change, 0 to destroy.
+./.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/linux_amd64:
+.  ..  CHANGELOG.md  LICENSE  README.md  terraform-provider-docker_v3.0.2
+```    
 
-Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
+* 2. Изучите файл .gitignore. В каком terraform-файле, согласно этому .gitignore, допустимо сохранить личную, секретную информацию?
+
+![img_3.png](Img/img_3.png)
+
+> в отмеченном файле допустимо сохранить личную, секретную информацию
+
+* 3. Выполните код проекта. Найдите в state-файле секретное содержимое созданного ресурса random_password, пришлите в качестве ответа конкретный ключ и его значение.
+
+![img_2.png](Img/img_2.png)
+
+    >1 значение
+    >2 ключ
+
+* 4. Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду terraform validate. 
+Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
+
+![img_4.png](Img/img_4.png)
+
+    в коде 4 ошибки:
+    1. Отсутствует имя ресурса
+    2. Неверное имя ресурса 
+    3. Ссылка на незадекларированный ресурс
+    4. Неверное имя.
+
+* 5. Выполните код. В качестве ответа приложите: исправленный 
+ 
+
+>фрагмент кода 
+
+```bash
+resource "docker_image" "latest" {
+  name         = "nginx:latest"
+  keep_locally = true
+}
+
+resource "docker_image" "nginx" {
+  name = "nginx:stable-alpine"
+}
+
+ resource "docker_container" "nginx" {
+  image = docker_image.nginx.image_id
+  name  = "example_${random_password.random_string.result}"
+
+  ports {
+    internal = 80
+    external = 8000
+  }
 ```
 
-</details>
-
-
-## Задание 3
-* 1. Создайте в корне проекта файл 'vms_platform.tf' . Перенесите в него все переменные первой ВМ.
-![img.png](Img_2/img_9.png)
-* 2. Скопируйте блок ресурса и создайте с его помощью вторую ВМ в файле main.tf: "netology-develop-platform-db" , 
-cores = 2, memory = 2, core_fraction = 20. Объявите её переменные с префиксом vm_db_ в том же файле ('vms_platform.tf').
-![img.png](Img_2/img_10.png)
-* 3. Примените изменения.
-![img.png](Img_2/img_11.png)
-
-## Задание 4
-* 1. Объявите в файле outputs.tf output типа map, содержащий { instance_name = external_ip } для каждой из ВМ.
-![img.png](Img_2/img_12.png)
-* 2. Примените изменения.
->В качестве решения приложите вывод значений ip-адресов команды terraform output.
+> и вывод команды docker ps.
 
 ```bash
-ubuntu@ubuntu2004:~/cloud/02$ terraform output
-ubuntu_image = "158.160.45.53"
-ubuntu_image_db = "51.250.78.110"
+ubuntu@ubuntu2004:~/cloud/01$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
+fe329a111e2b   e6295d4bbc45   "/docker-entrypoint.…"   3 seconds ago   Up 2 seconds   0.0.0.0:8000->80/tcp   example_6P9JIAU5jb6TqKOB
 ```
 
-## Задание 5
-1. В файле locals.tf опишите в одном local-блоке имя каждой ВМ, используйте интерполяцию ${..} с несколькими переменными по примеру из лекции.
-2. Замените переменные с именами ВМ из файла variables.tf на созданные вами local-переменные.
-3. Примените изменения.
 
-![img.png](Img_2/img_13.png)
-
-## Задание 6
-* 1. Вместо использования трёх переменных ".._cores",".._memory",".._core_fraction" в блоке resources {...}, 
-объедините их в переменные типа map с именами "vm_web_resources" и "vm_db_resources".
-В качестве продвинутой практики попробуйте создать одну map-переменную vms_resources и уже внутри неё конфиги обеих ВМ — вложенный map.
-![img.png](Img_2/img_14.png)
-
-* 2. Также поступите с блоком metadata {serial-port-enable, ssh-keys}, эта переменная должна быть общая для всех ваших ВМ.
-
-![img.png](Img_2/img_15.png)
-
-* 3. Найдите и удалите все более не используемые переменные проекта.
- > Удалены неиспользуемые переменные
-
-* 4. Проверьте terraform plan. Изменений быть не должно.
+* 6. Замените имя docker-контейнера в блоке кода на hello_world. 
+Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". 
+>Выполните команду terraform apply -auto-approve. 
 
 ```bash
-ubuntu@ubuntu2004:~/cloud/02$ terraform plan
-data.yandex_compute_image.ubuntu_image_db: Reading...
-data.yandex_compute_image.ubuntu_image: Reading...
-yandex_vpc_network.develop: Refreshing state... [id=enpog1it9ovnadjdbpvi]
-data.yandex_compute_image.ubuntu_image_db: Read complete after 0s [id=fd839i1233e8krfrf92s]
-data.yandex_compute_image.ubuntu_image: Read complete after 0s [id=fd839i1233e8krfrf92s]
-yandex_vpc_subnet.subnet_develop: Refreshing state... [id=e9bqvjmsdn7i2v6hrgjr]
-yandex_compute_instance.platform_numb_db: Refreshing state... [id=fhmaqd9lk1qdri8dfj3u]
-yandex_compute_instance.platform_numb: Refreshing state... [id=fhmg98a9ultq43nf8ekd]
+ubuntu@ubuntu2004:~/cloud/01$ terraform apply -auto-approve
+random_password.random_string: Refreshing state... [id=none]
+docker_image.hello_world: Refreshing state... [id=sha256:e6295d4bbc4559ee7ed2e93830f4228a08af4114d7914db140a026f84e69adbbnginx:stable-alpine]
+docker_image.latest: Refreshing state... [id=sha256:a6bd71f48f6839d9faae1f29d3babef831e76bc213107682c5cc80f0cbb30866nginx:latest]
+docker_container.nginx: Refreshing state... [id=afedafdc2477b6f611fbb63a7ca2d26f50324485cc30663ea89b7084a729d335]
 
 No changes. Your infrastructure matches the configuration.
 
 Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
 ```
+
+> Объясните своими словами, в чём может быть опасность применения ключа -auto-approve. 
+
+- Команда выполняет и применяет изменения к вашей инфраструктуре, не запрашивая одобрения у пользователя 
+Поэтому ошибки могут привести к необратимой потере данных или уничтожению информации.
+
+>В качестве ответа дополнительно приложите вывод команды docker ps.
+```bash
+ubuntu@ubuntu2004:~/cloud/01$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                  NAMES
+afedafdc2477   e6295d4bbc45   "/docker-entrypoint.…"   52 seconds ago   Up 51 seconds   0.0.0.0:8000->80/tcp   example_6P9JIAU5jb6TqKOB
+```
+
+* 7. Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.
+```bash
+ubuntu@ubuntu2004:~/cloud/01$ cat terraform.tfstate
+{
+  "version": 4,
+  "terraform_version": "1.6.4",
+  "serial": 48,
+  "lineage": "f94eab55-3c8f-f95f-9760-624360236297",
+  "outputs": {},
+  "resources": [],
+  "check_results": null
+}
+```
+
+* 8. Объясните, почему при этом не был удалён docker-образ nginx:latest. 
+Ответ обязательно подкрепите строчкой из документации terraform провайдера docker. (ищите в классификаторе resource docker_image )
+
+
+![img.png](Img/img_5.png)
+
+...
