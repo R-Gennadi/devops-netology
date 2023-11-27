@@ -25,7 +25,7 @@ ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Ra 02
 ```    
 
 
-## Задание 1
+## Задание 0
 * 1. Ознакомьтесь с документацией к security-groups в Yandex Cloud.
 
 ![img_2.png](Img_2/img_2.png)
@@ -38,47 +38,29 @@ ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Ra 02
 
 > в отмеченном файле допустимо сохранить личную, секретную информацию
 
-* 3. Выполните код проекта. Найдите в state-файле секретное содержимое созданного ресурса random_password, пришлите в качестве ответа конкретный ключ и его значение.
 
-![img_2.png](Img/img_2.png)
+## Задание 1
+* 1. Изучите проект. В файле variables.tf объявлены переменные для Yandex provider.
 
-    >1 значение
-    >2 ключ
+   >1 значение
+   >2 ключ
 
-* 4. Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду terraform validate. 
-Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.
+* 2. Переименуйте файл personal.auto.tfvars_example в personal.auto.tfvars. Заполните переменные: идентификаторы облака, токен доступа. Благодаря .gitignore этот файл не попадёт в публичный репозиторий. Вы можете выбрать иной способ безопасно передать секретные данные в terraform..
 
-![img_4.png](Img/img_4.png)
 
     в коде 4 ошибки:
-    1. Отсутствует имя ресурса
-    2. Неверное имя ресурса 
-    3. Ссылка на незадекларированный ресурс
-    4. Неверное имя.
+   1. Отсутствует имя ресурса
+   2. Неверное имя ресурса 
+   3. Ссылка на незадекларированный ресурс
+   4. Неверное имя.
 
-* 5. Выполните код. В качестве ответа приложите: исправленный 
+* 3.  Сгенерируйте или используйте свой текущий ssh-ключ. Запишите его открытую часть в переменную vms_ssh_root_key
  
 
 >фрагмент кода 
 
 ```bash
-resource "docker_image" "latest" {
-  name         = "nginx:latest"
-  keep_locally = true
-}
 
-resource "docker_image" "nginx" {
-  name = "nginx:stable-alpine"
-}
-
- resource "docker_container" "nginx" {
-  image = docker_image.nginx.image_id
-  name  = "example_${random_password.random_string.result}"
-
-  ports {
-    internal = 80
-    external = 8000
-  }
 ```
 
 > и вывод команды docker ps.
