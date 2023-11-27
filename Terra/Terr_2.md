@@ -15,77 +15,26 @@ Yandex Cloud CLI 0.113.0 linux/amd64
 * 3.  Исходный код для выполнения задания расположен в директории 02/src.
 
 ```bash
-ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Rla 02
+ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Ra 02
 02:
-итого 36
-drwxrwxr-x 3 ubuntu ubuntu 4096 ноя 24 05:48 .
-drwxrwxr-x 9 ubuntu ubuntu 4096 ноя 24 05:48 ..
--rw-rw-r-- 1 ubuntu ubuntu 1860 ноя 24 05:48 demostration1.tf
--rw-rw-r-- 1 ubuntu ubuntu 4589 ноя 24 05:48 demostration2.tf
--rw-rw-r-- 1 ubuntu ubuntu 9802 ноя 24 05:48 hw-02.md
-drwxrwxr-x 2 ubuntu ubuntu 4096 ноя 24 05:48 src
+.  ..  demostration1.tf  demostration2.tf  hw-02.md  src
 
 02/src:
-итого 36
-drwxrwxr-x 2 ubuntu ubuntu 4096 ноя 24 05:48 .
-drwxrwxr-x 3 ubuntu ubuntu 4096 ноя 24 05:48 ..
--rw-rw-r-- 1 ubuntu ubuntu  542 ноя 24 05:48 console.tf
--rw-rw-r-- 1 ubuntu ubuntu  155 ноя 24 05:48 .gitignore
--rw-rw-r-- 1 ubuntu ubuntu    0 ноя 24 05:48 locals.tf
--rw-rw-r-- 1 ubuntu ubuntu  900 ноя 24 05:48 main.tf
--rw-rw-r-- 1 ubuntu ubuntu    0 ноя 24 05:48 outputs.tf
--rw-rw-r-- 1 ubuntu ubuntu   42 ноя 24 05:48 personal.auto.tfvars_example
--rw-rw-r-- 1 ubuntu ubuntu  261 ноя 24 05:48 providers.tf
--rw-rw-r-- 1 ubuntu ubuntu  205 ноя 24 05:48 terraformrc
--rw-rw-r-- 1 ubuntu ubuntu 1024 ноя 24 05:48 variables.tf
+.   console.tf  locals.tf  outputs.tf                    providers.tf  variables.tf
+..  .gitignore  main.tf    personal.auto.tfvars_example  terraformrc
 ```    
 
 
 ## Задание 1
-* 1. Перейдите в каталог src. Скачайте все необходимые зависимости, использованные в проекте.
+* 1. Ознакомьтесь с документацией к security-groups в Yandex Cloud.
 
-```bash
-ubuntu@ubuntu2004:~/cloud/01$ ls -Ra
-.:
-.  ..  .gitignore  main.tf  .terraform  .terraform.lock.hcl  .terraformrc  terraform.tfstate
+![img_2.png](Img_2/img_2.png)
 
-./.terraform:
-.  ..  providers
 
-./.terraform/providers:
-.  ..  registry.terraform.io
+* 2. Запросите preview-доступ к этому функционалу в личном кабинете Yandex Cloud. Обычно его выдают в течение 24-х часов. https://console.cloud.yandex.ru/folders/<ваш cloud_id>/vpc/security-groups.
+Этот функционал понадобится к следующей лекции/
 
-./.terraform/providers/registry.terraform.io:
-.  ..  hashicorp  kreuzwerker
 
-./.terraform/providers/registry.terraform.io/hashicorp:
-.  ..  random
-
-./.terraform/providers/registry.terraform.io/hashicorp/random:
-.  ..  3.5.1
-
-./.terraform/providers/registry.terraform.io/hashicorp/random/3.5.1:
-.  ..  linux_amd64
-
-./.terraform/providers/registry.terraform.io/hashicorp/random/3.5.1/linux_amd64:
-.  ..  terraform-provider-random_v3.5.1_x5
-
-./.terraform/providers/registry.terraform.io/kreuzwerker:
-.  ..  docker
-
-./.terraform/providers/registry.terraform.io/kreuzwerker/docker:
-.  ..  3.0.2
-
-./.terraform/providers/regi[Terr_1.md](Terr_1.md)stry.terraform.io/kreuzwerker/docker/3.0.2:
-.  ..  linux_amd64
-
-./.terraform/providers/registry.terraform.io/kreuzwerker/docker/3.0.2/linux_amd64:
-.  ..  CHANGELOG.md  LICENSE  README.md  terraform-provider-docker_v3.0.2
-```    
-
-* 2. Изучите файл .gitignore. В каком terraform-файле, согласно этому .gitignore, допустимо сохранить личную, секретную информацию?
-
-![img_3.png](Img/img_3.png)
 
 > в отмеченном файле допустимо сохранить личную, секретную информацию
 
