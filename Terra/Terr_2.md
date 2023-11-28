@@ -41,6 +41,7 @@ ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Ra 02
 
 * 1. скриншот ЛК Yandex Cloud с созданной ВМ;
 
+
 * 2. скриншот успешного подключения к консоли ВМ через ssh. К OS ubuntu "out of a box, те из коробки" необходимо подключаться под пользователем ubuntu: "ssh ubuntu@vm_ip_address"; Вы познакомитесь с тем как при создании ВМ кастомизировать пользователя в блоке metadata в следующей лекции.
 
 
