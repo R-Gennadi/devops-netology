@@ -43,8 +43,10 @@ ubuntu@ubuntu2004:~/git/git_terr_netology/ter-homeworks$ ls -Ra 02
 
 ![img.png](Img_2/img_4.png)
 
-* 2. скриншот успешного подключения к консоли ВМ через ssh. К OS ubuntu "out of a box, те из коробки" необходимо подключаться под пользователем ubuntu: "ssh ubuntu@vm_ip_address"; Вы познакомитесь с тем как при создании ВМ кастомизировать пользователя в блоке metadata в следующей лекции.
+* 2. скриншот успешного подключения к консоли ВМ через ssh. 
+К OS ubuntu "out of a box, те из коробки" необходимо подключаться под пользователем ubuntu: "ssh ubuntu@vm_ip_address"; 
 
+![img.png](Img_2/img_5.png)
 
 
 * 3. ответы на вопросы
