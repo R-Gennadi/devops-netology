@@ -190,10 +190,15 @@ Note: You didn't use the -out option to save this plan, so Terraform can't guara
 
 ## Задание 4
 * 1. Объявите в файле outputs.tf output типа map, содержащий { instance_name = external_ip } для каждой из ВМ.
-
+![img.png](Img_2/img_12.png)
 * 2. Примените изменения.
 >В качестве решения приложите вывод значений ip-адресов команды terraform output.
 
+```bash
+ubuntu@ubuntu2004:~/cloud/02$ terraform output
+ubuntu_image = "158.160.45.53"
+ubuntu_image_db = "51.250.78.110"
+```
 
 ## Задание 5
 * 1. В файле locals.tf опишите в одном local-блоке имя каждой ВМ, используйте интерполяцию ${..} с несколькими переменными по примеру из лекции.
