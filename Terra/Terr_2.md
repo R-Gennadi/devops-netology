@@ -215,13 +215,25 @@ ubuntu_image_db = "51.250.78.110"
 
 * 2. Также поступите с блоком metadata {serial-port-enable, ssh-keys}, эта переменная должна быть общая для всех ваших ВМ.
 
+![img.png](Img_2/img_15.png)
+
 * 3. Найдите и удалите все более не используемые переменные проекта.
 
 * 4. Проверьте terraform plan. Изменений быть не должно.
 
->фрагмент кода 
-
 ```bash
+ubuntu@ubuntu2004:~/cloud/02$ terraform plan
+data.yandex_compute_image.ubuntu_image_db: Reading...
+data.yandex_compute_image.ubuntu_image: Reading...
+yandex_vpc_network.develop: Refreshing state... [id=enpog1it9ovnadjdbpvi]
+data.yandex_compute_image.ubuntu_image_db: Read complete after 0s [id=fd839i1233e8krfrf92s]
+data.yandex_compute_image.ubuntu_image: Read complete after 0s [id=fd839i1233e8krfrf92s]
+yandex_vpc_subnet.subnet_develop: Refreshing state... [id=e9bqvjmsdn7i2v6hrgjr]
+yandex_compute_instance.platform_numb_db: Refreshing state... [id=fhmaqd9lk1qdri8dfj3u]
+yandex_compute_instance.platform_numb: Refreshing state... [id=fhmg98a9ultq43nf8ekd]
 
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration and found no differences, so no changes are needed.
 ```
 
