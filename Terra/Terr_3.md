@@ -33,3 +33,16 @@ ubuntu@ubuntu2004:~/cloud$ ls -Ra 03
 
 * 2. Запросите preview-доступ к этому функционалу в личном кабинете Yandex Cloud. 
 [Урок02](https://github.com/R-Gennadi/devops-netology/blob/main/Terra/Terr_2.md "Ранее было представлено")
+
+
+## Задание 1
+Приложите скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud или скриншот отказа в предоставлении доступа к preview-версии.
+![img.png](Files_3/img.png)
+
+## Задание 2
+
+
+## Задание 3
+
+
+## Задание 4
