@@ -48,6 +48,25 @@ variable "each_vm" {
   type = list(object({  vm_name=string, cpu=number, ram=number, disk=number }))
 }
 
+* 4.  ВМ из пункта 2.1 должны создаваться после создания ВМ из пункта 2.2.
+
+* 5. Используйте функцию file в local-переменной для считывания ключа ~/.ssh/id_rsa.pub и его последующего использования в блоке metadata, взятому из ДЗ 2.
+
+<details>
+<summary> files for код </summary>
+[count-vm.tf](Files_3%2Fcount-vm.tf)
+[for_each-vm.tf](Files_3%2Ffor_each-vm.tf)
+
+</details>
+
+* 6. Инициализируйте проект, выполните код.
+
+<details>
+<summary> код </summary>
+
+
+</details>
+
 ## Задание 3
 
 
