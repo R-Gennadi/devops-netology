@@ -27,22 +27,31 @@ ubuntu@ubuntu2004:~/cloud$ ls -Ra 03
 > принято
 
 
-## Задание 0
-* 1. Ознакомьтесь с документацией к security-groups в Yandex Cloud.
-[Урок02](https://github.com/R-Gennadi/devops-netology/blob/main/Terra/Terr_2.md "Ранее было представлено")
-
-* 2. Запросите preview-доступ к этому функционалу в личном кабинете Yandex Cloud. 
-[Урок02](https://github.com/R-Gennadi/devops-netology/blob/main/Terra/Terr_2.md "Ранее было представлено")
-
-
 ## Задание 1
-Приложите скриншот входящих правил «Группы безопасности» в ЛК Yandex Cloud или скриншот отказа в предоставлении доступа к preview-версии.
+* 1. Изучите проект.
+* 2. Заполните файл personal.auto.tfvars.
+* 3. Инициализируйте проект, выполните код. Он выполнится, даже если доступа к preview нет 
 ![img.png](Files_3/img.png)
+
 
 ## Задание 2
 
+* 1. Создайте файл count-vm.tf. 
+Опишите в нём создание двух одинаковых ВМ web-1 и web-2 (не web-0 и web-1) с минимальными параметрами, используя мета-аргумент count loop.
+Назначьте ВМ созданную в первом задании группу безопасности.(как это сделать узнайте в документации провайдера yandex/compute_instance )
+
+* 2.  Создайте файл for_each-vm.tf. 
+Опишите в нём создание двух ВМ для баз данных с именами "main" и "replica" разных по cpu/ram/disk , используя мета-аргумент for_each loop.
+Используйте для обеих ВМ одну общую переменную типа:
+
+variable "each_vm" {
+  type = list(object({  vm_name=string, cpu=number, ram=number, disk=number }))
+}
 
 ## Задание 3
+
+
+## Задание 4
 
 
 ## Задание 4
