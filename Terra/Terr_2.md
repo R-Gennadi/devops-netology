@@ -183,7 +183,8 @@ Note: You didn't use the -out option to save this plan, so Terraform can't guara
 ## Задание 3
 * 1. Создайте в корне проекта файл 'vms_platform.tf' . Перенесите в него все переменные первой ВМ.
 ![img.png](Img_2/img_9.png)
-* 2. Скопируйте блок ресурса и создайте с его помощью вторую ВМ в файле main.tf: "netology-develop-platform-db" , cores = 2, memory = 2, core_fraction = 20. Объявите её переменные с префиксом vm_db_ в том же файле ('vms_platform.tf').
+* 2. Скопируйте блок ресурса и создайте с его помощью вторую ВМ в файле main.tf: "netology-develop-platform-db" , 
+cores = 2, memory = 2, core_fraction = 20. Объявите её переменные с префиксом vm_db_ в том же файле ('vms_platform.tf').
 ![img.png](Img_2/img_10.png)
 * 3. Примените изменения.
 ![img.png](Img_2/img_11.png)
