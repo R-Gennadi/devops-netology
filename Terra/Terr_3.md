@@ -54,10 +54,11 @@ variable "each_vm" {
 
 <details>
 <summary> files for код </summary>
-[count-vm.tf](Files_3%2Fcount-vm.tf)
-[for_each-vm.tf](Files_3%2Ffor_each-vm.tf)
 
 </details>
+
+[count-vm.tf](Files_3%2Fcount-vm.tf)
+[for_each-vm.tf](Files_3%2Ffor_each-vm.tf)
 
 * 6. Инициализируйте проект, выполните код.
 
