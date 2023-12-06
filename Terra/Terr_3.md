@@ -31,6 +31,7 @@ ubuntu@ubuntu2004:~/cloud$ ls -Ra 03
 * 1. Изучите проект.
 * 2. Заполните файл personal.auto.tfvars.
 * 3. Инициализируйте проект, выполните код. Он выполнится, даже если доступа к preview нет 
+
 ![img.png](Files_3/img.png)
 
 
@@ -44,19 +45,23 @@ ubuntu@ubuntu2004:~/cloud$ ls -Ra 03
 
 * 2.  Создайте файл for_each-vm.tf. 
 Опишите в нём создание двух ВМ для баз данных с именами "main" и "replica" разных по cpu/ram/disk , используя мета-аргумент for_each loop.
+
 ![img.png](Files_3/img_3.png)
 
 Используйте для обеих ВМ одну общую переменную типа:
  variable "each_vm" {
  type = list(object({  vm_name=string, cpu=number, ram=number, disk=number }))
 -}
+
 ![img.png](Files_3/img_4.png)
 
 * 4. ВМ из пункта 2.1 должны создаваться после создания ВМ из пункта 2.2.
+
 ![img_1.png](Files_3/img_1.png)
 
 * 5. Используйте функцию file в local-переменной для считывания ключа ~/.ssh/id_rsa.pub и его последующего использования в блоке metadata, взятому из ДЗ 2.
-![img_5.png](Files_3/img_5.png)
+
+ ![img_5.png](Files_3/img_5.png)
 
 > files for код:
 [count-vm.tf](Files_3%2Fcount-vm.tf)
@@ -65,7 +70,8 @@ ubuntu@ubuntu2004:~/cloud$ ls -Ra 03
 [variables.tf](Files_3%2Fvariables.tf)
 
 * 6. Инициализируйте проект, выполните код.
-![img_6.png](Files_3/img_6.png)
+
+ ![img_6.png](Files_3/img_6.png)
 
 <details>
 <summary> вывод команды  terraform apply </summary>
