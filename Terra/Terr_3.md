@@ -468,5 +468,3 @@ Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
 
 ## Задание 4
 
-
-## Задание 4
