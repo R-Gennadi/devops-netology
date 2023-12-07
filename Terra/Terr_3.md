@@ -64,13 +64,17 @@ ubuntu@ubuntu2004:~/cloud$ ls -Ra 03
  ![img_5.png](Files_3/img_5.png)
 
 > files for код:
+
 [count-vm.tf](Files_3%2Fcount-vm.tf)
+
 [for_each-vm.tf](Files_3%2Ffor_each-vm.tf)
+
 [locals.tf](Files_3%2Flocals.tf)
+
 [variables.tf](Files_3%2Fvariables.tf)
 
 * 6. Инициализируйте проект, выполните код.
-
+Скриншот результата выполнения кода
  ![img_6.png](Files_3/img_6.png)
 
 <details>
