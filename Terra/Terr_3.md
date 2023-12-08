@@ -494,6 +494,7 @@ Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
 Для общего зачёта создайте в вашем GitHub-репозитории новую ветку terraform-03. 
 Закоммитьте в эту ветку свой финальный код проекта, пришлите ссылку на коммит.
 
+<summary> files for код </summary>
 [src](Files_3/src)
 
 **Удалите все созданные ресурсы**.
