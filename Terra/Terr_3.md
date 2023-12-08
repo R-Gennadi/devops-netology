@@ -65,13 +65,13 @@ ubuntu@ubuntu2004:~/cloud$ ls -Ra 03
 
 > files for код:
 
-[count-vm.tf](Files_3%2Fcount-vm.tf)
+[count-vm.tf](Files_3/count-vm.tf)
 
-[for_each-vm.tf](Files_3%2Ffor_each-vm.tf)
+[for_each-vm.tf](Files_3/for_each-vm.tf)
 
-[locals.tf](Files_3%2Flocals.tf)
+[locals.tf](Files_3/locals.tf)
 
-[variables.tf](Files_3%2Fvariables.tf)
+[variables.tf](Files_3/variables.tf)
 
 * 6. Инициализируйте проект, выполните код.
 Скриншот результата выполнения кода
@@ -495,6 +495,7 @@ Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
 Закоммитьте в эту ветку свой финальный код проекта, пришлите ссылку на коммит.
 
 <summary> files for код </summary>
+
 [src](Files_3/src)
 
 **Удалите все созданные ресурсы**.
