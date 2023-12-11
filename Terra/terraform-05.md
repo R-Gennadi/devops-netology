@@ -69,6 +69,10 @@ Warning: [Fixable] variable "vm_db_name" is declared but not used (terraform_unu
 
 Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.5.0/docs/rules/terraform_unused_declarations.md
 </details>
+
+
+<details>
+<summary> вывод команды  checkov </summary>
 > --download-external-modules true --directory /tf
 
        _               _              
@@ -121,11 +125,6 @@ Check: CKV_TF_1: "Ensure Terraform module sources use a commit hash"
                 22 |   } 
                 23 |   
                 24 | }
-
-
-
-<details>
-<summary> вывод команды  checkov </summary>
 
 
 </details>
