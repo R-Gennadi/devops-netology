@@ -1,5 +1,27 @@
 # Домашнее задание к занятию 1 «Введение в Ansible»
 
+#### Подготовка к выполнению
+<details><summary>.</summary>
+
+1. Установите ansible версии 2.10 или выше.
+2. Создайте свой собственный публичный репозиторий на github с произвольным именем.
+3. Скачайте [playbook](./playbook/) из репозитория с домашним заданием и перенесите его в свой репозиторий.
+
+</details>  
+
+```bash
+ubuntu@ubuntu2004:~$ ansible --version
+ansible [core 2.13.13]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/ubuntu/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/ubuntu/.local/lib/python3.8/site-packages/ansible
+  ansible collection location = /home/ubuntu/.ansible/collections:/usr/share/ansible/collections
+  executable location = /home/ubuntu/.local/bin/ansible
+  python version = 3.8.10 (default, Nov 22 2023, 10:22:35) [GCC 9.4.0]
+  jinja version = 3.1.2
+  libyaml = True
+```
+
 ## Основная часть
 
 * 1. Попробуйте запустить playbook на окружении из test.yml,
