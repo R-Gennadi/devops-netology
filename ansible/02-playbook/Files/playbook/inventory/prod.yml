@@ -1,0 +1,16 @@
+---
+clickhouse:
+  hosts:
+    clickhouse-01:
+      ansible_connection: ssh
+      ansible_ssh_user: root
+      ansible_host: 172.18.0.2
+      ansible_ssh_pass: root123
+
+vector:
+  hosts:
+    vector-01:
+      ansible_connection: ssh
+      ansible_ssh_user: root
+      ansible_host: 172.18.0.2
+      ansible_ssh_pass: root123
