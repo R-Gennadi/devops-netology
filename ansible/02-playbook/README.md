@@ -63,7 +63,6 @@ playbook идемпотентен, за исключением запуска Ve
 какие у него есть параметры и теги. Пример качественной документации ansible playbook по ссылке. 
 Так же приложите скриншоты выполнения заданий №5-8
 
+[README.md](https://github.com/R-Gennadi/devops-netology/blob/main/ansible/02-playbook/Files/playbook/README.md "описание playbook")
 
-10. Готовый playbook выложите в свой репозиторий, поставьте тег 08-ansible-02-playbook на фиксирующий коммит, 
-в ответ предоставьте ссылку на него.
 
