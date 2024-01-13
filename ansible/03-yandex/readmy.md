@@ -29,9 +29,10 @@
 > 
 
 <details>
-<summary> prod.yml </summary>
 
+<summary> prod.yml </summary>
 ubuntu@ubuntu2004:~/cloud/test/inventory$ cat prod.yml
+
 ---
 clickhouse:
   hosts:
@@ -45,7 +46,6 @@ lighthouse:
   hosts:
     centos-3:
       ansible_host: 158.160.114.41
-
 </details>
 
 5. Запустите `ansible-lint site.yml` и исправьте ошибки, если они есть.
