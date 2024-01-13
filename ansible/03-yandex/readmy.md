@@ -6,7 +6,7 @@
 >результат 
 > 
 Создано 3 виртуальные машины в Yandex.Cloud с использованием Terraform.
-[Terraform](https://github.com/R-Gennadi/devops-netology/blob/main/ansible/02-playbook/Files/playbook/README.md "Код Terraform")
+[Terraform](https://github.com/R-Gennadi/devops-netology/tree/main/ansible/03-yandex/files/terraform "Код Terraform")
 
 2. Репозиторий LightHouse находится ...
 >результат
@@ -75,7 +75,7 @@ Playbook идемпотентен,
 9. Подготовьте README.md-файл по своему playbook. В нём должно быть описано: что делает playbook, какие у него есть параметры и теги.
 >результат
 >
-[README.md](https://github.com/R-Gennadi/devops-netology/blob/main/ansible/02-playbook/Files/playbook/README.md "описание playbook")
+[README.md](https://github.com/R-Gennadi/devops-netology/blob/main/ansible/03-yandex/files/playbook/README.md "описание playbook")
 
 11. Готовый playbook выложите в свой репозиторий, поставьте тег `08-ansible-03-yandex` на фиксирующий коммит, в ответ предоставьте ссылку на него.
 >результат
