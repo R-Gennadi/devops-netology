@@ -1,0 +1,7 @@
+---
+all:
+  hosts:
+    host1:
+      ansible_python_interpreter: /usr/bin/python
+    host2:
+    host3:
