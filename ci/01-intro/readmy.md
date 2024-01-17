@@ -58,8 +58,8 @@ scrum = Projects -> Create project -> Scrum -> Use template -> Company-managed -
 5. Перейдите в Scrum, запланируйте новый спринт, состоящий из задач эпика и одного бага, стартуйте спринт, проведите задачи до состояния Closed. Закройте спринт.
 6. Если всё отработалось в рамках ожидания — выгрузите схемы workflow для импорта в XML. Файлы с workflow и скриншоты workflow приложите к решению задания.
 
-* 1. [all](files%2Fexport_xml%2all.xml)
-* 2. [BUG](files%2Fexport_xml%2FBUG.xml)
+* 1. [all](files/export_xml/all.xml)
+* 2. [BUG](files/export_xml/BUG.xml)
 
 
 ---
