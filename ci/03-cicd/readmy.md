@@ -116,7 +116,7 @@ OS name: "linux", version: "5.15.0-91-generic", arch: "amd64", family: "unix"
 >  ### результат:
 >
 
-1 ![img_13.png](files/img/img_13.png) 
+1 ![img.png](files/img/img5.png) 
 
 2 ![img_12.png](files/img/img_12.png)
 
