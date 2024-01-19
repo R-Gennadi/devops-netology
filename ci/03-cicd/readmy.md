@@ -16,17 +16,17 @@
 
 > ### результат:
 > 
-1 ![img.png](img4.png) 
+1 ![img.png](files/img/img4.png) 
 
-2 ![img_1.png](img_1.png)
+2 ![img_1.png](files/img/img_1.png)
 
-3 ![img_2.png](img_2.png) 
+3 ![img_2.png](files/img/img_2.png) 
 
-4 ![img.png](img.png)
+4 ![img.png](files/img/img.png)
 
-5 ![img.png](img2.png)
+5 ![img.png](files/img/img2.png)
 
-7 ![img.png](img3.png)
+7 ![img.png](files/img/img3.png)
 
 
 ## Знакомоство с SonarQube
@@ -45,15 +45,15 @@
 
 > ### результат:
 > 
-1-4 ![img_3.png](img_3.png)
+1-4 ![img_3.png](files/img/img_3.png)
 
-5 ![img_4.png](img_4.png)
+5 ![img_4.png](files/img/img_4.png)
 
-6 ![img_5.png](img_5.png)
+6 ![img_5.png](files/img/img_5.png)
 
-7-8 ![img_7.png](img_7.png)
+7-8 ![img_7.png](files/img/img_7.png)
 
-9 ![img_6.png](img_6.png)
+9 ![img_6.png](files/img/img_6.png)
 
 ## Знакомство с Nexus
 <details> <summary> ### Основная часть </summary>
@@ -70,9 +70,9 @@
 
 >  ### результат:
 >
-1 ![img_8.png](img_8.png)
-2 ![img_9.png](img_9.png)
-3 ![img_10.png](img_10.png)
+1 ![img_8.png](files/img/img_8.png)
+2 ![img_9.png](files/img/img_9.png)
+3 ![img_10.png](files/img/img_10.png)
 4 [maven-metadata.xml](src%2Fmaven-metadata.xml)
 
 ### Знакомство с Maven
@@ -87,6 +87,16 @@
 
 >  ### результат:
 >
+1-4
+```bash
+ubuntu@ubuntu2004:~/cloud/test$ mvn --version
+Apache Maven 3.9.6 (bc0240f3c744dd6b6ec2920b3cd08dcc295161ae)
+Maven home: /home/ubuntu/maven
+Java version: 1.8.0_392, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: ru_RU, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-91-generic", arch: "amd64", family: "unix"
+```
+5 ![img_11.png](files/img/img_11.png)
 
 <details> <summary> ### Основная часть </summary>
 
@@ -99,5 +109,9 @@
 >  ### результат:
 >
 
+1 ![img_13.png](files/img/img_13.png) 
+2 ![img_12.png](files/img/img_12.png)
+3 ![img_14.png](files/img/img_14.png)
+4 [pom.xml](src%2Fpom.xml)
 ---
 
