@@ -70,7 +70,10 @@
 
 >  ### результат:
 >
- 
+1 ![img_8.png](img_8.png)
+2 ![img_9.png](img_9.png)
+3 ![img_10.png](img_10.png)
+4 [maven-metadata.xml](src%2Fmaven-metadata.xml)
 
 ### Знакомство с Maven
 <details> <summary> ### Подготовка к выполнению </summary>
