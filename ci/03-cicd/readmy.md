@@ -7,7 +7,7 @@
 
 
 1. Создайте два VM в Yandex Cloud с параметрами: 2CPU 4RAM Centos7 (остальное по минимальным требованиям).
-2. Пропишите в [inventory] и [playbook] созданные хосты.
+2. Пропишите в [inventory] созданные хосты.
 3. Добавьте в [files] файл со своим публичным ключом (id_rsa.pub). Если ключ называется иначе — найдите таску в плейбуке, которая использует id_rsa.pub имя, и исправьте на своё.
 4. Запустите playbook, ожидайте успешного завершения.
 5. Проверьте готовность SonarQube через [браузер].
@@ -20,10 +20,13 @@
 > 
 1. ![img.png](img4.png) 
 2. ![img_1.png](img_1.png)
-4. ![img_2.png](img_2.png) 
-5. ![img.png](img.png) 
-7. ![img.png](img2.png)
-8. ![img.png](img3.png)
+
+3. ![img_2.png](img_2.png) 
+4. ![img.png](img.png)
+
+5. ![img.png](img2.png)
+
+7. ![img.png](img3.png)
 
 ## Знакомоство с SonarQube
 
