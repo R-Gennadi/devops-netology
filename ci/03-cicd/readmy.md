@@ -16,7 +16,9 @@
 
 > ### результат:
 > 
-1 ![img.png](files/img/img4.png) 
+1 Для создания 2х виртуальныех машин в Yandex.Cloud использовал Terraform,
+[Terraform](https://github.com/R-Gennadi/devops-netology/tree/main/ansible/03-yandex/files/terraform "Код Terraform")
+![img.png](files/img/img4.png) 
 
 2 ![img_1.png](files/img/img_1.png)
 
@@ -73,7 +75,7 @@
 1 ![img_8.png](files/img/img_8.png)
 2 ![img_9.png](files/img/img_9.png)
 3 ![img_10.png](files/img/img_10.png)
-4 [maven-metadata.xml](src%2Fmaven-metadata.xml)
+4 [maven-metadata.xml](files%2Fmaven-metadata.xml)
 
 ### Знакомство с Maven
 <details> <summary> ### Подготовка к выполнению </summary>
@@ -112,6 +114,6 @@ OS name: "linux", version: "5.15.0-91-generic", arch: "amd64", family: "unix"
 1 ![img_13.png](files/img/img_13.png) 
 2 ![img_12.png](files/img/img_12.png)
 3 ![img_14.png](files/img/img_14.png)
-4 [pom.xml](src%2Fpom.xml)
+4 [pom.xml](files%2Fpom.xml)
 ---
 
