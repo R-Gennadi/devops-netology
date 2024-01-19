@@ -2,9 +2,7 @@
 
 ## Подготовка к выполнению
 
-<details>
-<summary> ## Подготовка к выполнению </summary>
-
+<details> <summary> . </summary>
 
 1. Создайте два VM в Yandex Cloud с параметрами: 2CPU 4RAM Centos7 (остальное по минимальным требованиям).
 2. Пропишите в [inventory] созданные хосты.
@@ -16,16 +14,16 @@
 8. Подключитесь под admin\admin123, поменяйте пароль, сохраните анонимный доступ.
 </details>
 
->результат
+> ### результат:
 > 
 1. ![img.png](img4.png) 
 2. ![img_1.png](img_1.png)
 3. ![img_2.png](img_2.png) 
 4. ![img.png](img.png)
 5. ![img.png](img2.png)
-6. .
+6. ...
 7. ![img.png](img3.png)
-8. .
+8. ...
 
 ## Знакомоство с SonarQube
 
