@@ -9,7 +9,7 @@
 
 </details>
 
-> ### Результат:
+> > ### результат:
 > 
 1. Для создания 2х виртуальныех машин в Yandex.Cloud использовал Terraform
 ![img.png](files/img/img.png)
@@ -41,51 +41,8 @@
 
 </details>
 
-> ### Результат:
->
-1. Freestyle Job, запускает molecule test из моего [репозитория](https://github.com/R-Gennadi/devops-netology/tree/main/ansible/vector-role) с ролью vector-role:
-В настройках сборки указан этот репозиторий:
-![img_4.png](files/img/img_4.png)
-
-Выполняю следующие команды:
-![img_8.png](files/img/img_8.png)
-
-Успешная сборка:
-![img_5.png](files/img/img_5.png)
-
-2. Declarative Pipeline Job, запускает molecule test из того же репозитория:
-Выполнил следующий код:
-```bash
-pipeline {
-    agent any
-
-    stages {
-        stage('GIT checkout') {
-            steps {
-                echo 'Get from GIT repository'
-                git credentialsId: 'git_ssh', 
-                url: 'git@github.com:DemoniumBlack/vector-role-molecule.git',
-                branch: 'main'
-            }
-        }
-        stage('preparation') {
-            steps {
-                echo 'Start preparation'
-                sh 'pip3 install -r tox-requirements.txt'
-                sh 'pip install "molecule[lint]"'
-                sh 'pip install "molecule[docker,lint]"'
-            }
-        }
-        stage('Start molecule test') {
-            steps {
-                echo 'Run molecule test'
-                sh 'molecule test'
-            }
-        }
-    }
-}
-```
-![img_6.png](files/img/img_6.png)
+> > ### результат:
+> 
 
 Успешная сборка:
 ![img_7.png](files/img/img_7.png)
