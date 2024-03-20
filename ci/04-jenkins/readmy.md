@@ -12,11 +12,14 @@
 > ### Результат:
 > 
 1. Для создания 2х виртуальныех машин в Yandex.Cloud использовал Terraform
+![img.png](img.png)
 2. Установлен Jenkins при помощи playbook.
+![img_1.png](img_1.png)
 3. Запущен Jenkins, проверена его работоспособность.
+![img_2.png](img_2.png)
 4. Сделана первоначальная настройка.
 Подключен агент:
-
+![img_3.png](img_3.png)
 
 <details> <summary> ## Основная часть </summary>
 
@@ -37,7 +40,16 @@
 
 > ### Результат:
 >
+1. Freestyle Job, запускает molecule test из моего репозитория с ролью vector-role:
+2. Declarative Pipeline Job, запускает molecule test из того же репозитория:
+3. Declarative Pipeline в файл Jenkinsfile.
+4. Multibranch Pipeline на запуск Jenkinsfile из репозитория.
+5. Scripted Pipeline, наполнен скриптом из pipeline.
+6. Внесены необходимые изменения, чтобы Pipeline запускал ansible-playbook без флагов --check --diff, если не установлен параметр при запуске джобы (prod_run = True).
+7. Изменения внесенные в Pipeline находятся в файле ScriptedJenkinsfile
+8. Репозиторий, на котором тестировался запуск Freestyle Job и Declarative Pipeline Job с запуском molecule test:
+Ссылка на Declarative Pipeline: https://github.com/DemoniumBlack/vector-role-molecule/blob/main/Jenkinsfile
 
-
+Ссылка на Scripted Pipeline:
 
 ---
