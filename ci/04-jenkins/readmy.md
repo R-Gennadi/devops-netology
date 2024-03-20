@@ -13,10 +13,13 @@
 > 
 1. Для создания 2х виртуальныех машин в Yandex.Cloud использовал Terraform
 ![img.png](img.png)
+
 2. Установлен Jenkins при помощи playbook.
 ![img_1.png](img_1.png)
+
 3. Запущен Jenkins, проверена его работоспособность.
 ![img_2.png](img_2.png)
+
 4. Сделана первоначальная настройка.
 Подключен агент:
 ![img_3.png](img_3.png)
@@ -41,7 +44,49 @@
 > ### Результат:
 >
 1. Freestyle Job, запускает molecule test из моего репозитория с ролью vector-role:
+В настройках сборки указан этот репозиторий:
+![img_4.png](img_4.png)
+
+Успешная сборка:
+![img_5.png](img_5.png)
+
 2. Declarative Pipeline Job, запускает molecule test из того же репозитория:
+Выполнил следующий код:
+```bash
+pipeline {
+    agent any
+
+    stages {
+        stage('GIT checkout') {
+            steps {
+                echo 'Get from GIT repository'
+                git credentialsId: 'git_ssh', 
+                url: 'git@github.com:DemoniumBlack/vector-role-molecule.git',
+                branch: 'main'
+            }
+        }
+        stage('preparation') {
+            steps {
+                echo 'Start preparation'
+                sh 'pip3 install -r tox-requirements.txt'
+                sh 'pip install "molecule[lint]"'
+                sh 'pip install "molecule[docker,lint]"'
+            }
+        }
+        stage('Start molecule test') {
+            steps {
+                echo 'Run molecule test'
+                sh 'molecule test'
+            }
+        }
+    }
+}
+```
+![img_6.png](img_6.png)
+
+Успешная сборка:
+![img_7.png](img_7.png)
+
 3. Declarative Pipeline в файл Jenkinsfile.
 4. Multibranch Pipeline на запуск Jenkinsfile из репозитория.
 5. Scripted Pipeline, наполнен скриптом из pipeline.
