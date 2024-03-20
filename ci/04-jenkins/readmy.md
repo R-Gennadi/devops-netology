@@ -12,17 +12,17 @@
 > ### Результат:
 > 
 1. Для создания 2х виртуальныех машин в Yandex.Cloud использовал Terraform
-![img.png](img.png)
+![img.png](files/img/img.png)
 
 2. Установлен Jenkins при помощи playbook.
-![img_1.png](img_1.png)
+![img_1.png](files/img/img_1.png)
 
 3. Запущен Jenkins, проверена его работоспособность.
-![img_2.png](img_2.png)
+![img_2.png](files/img/img_2.png)
 
 4. Сделана первоначальная настройка.
 Подключен агент:
-![img_3.png](img_3.png)
+![img_3.png](files/img/img_3.png)
 
 <details> <summary> ## Основная часть </summary>
 
@@ -45,10 +45,13 @@
 >
 1. Freestyle Job, запускает molecule test из моего репозитория с ролью vector-role:
 В настройках сборки указан этот репозиторий:
-![img_4.png](img_4.png)
+![img_4.png](files/img/img_4.png)
+
+Выполняю следующие команды:
+![img_8.png](files/img/img_8.png)
 
 Успешная сборка:
-![img_5.png](img_5.png)
+![img_5.png](files/img/img_5.png)
 
 2. Declarative Pipeline Job, запускает molecule test из того же репозитория:
 Выполнил следующий код:
@@ -82,16 +85,30 @@ pipeline {
     }
 }
 ```
-![img_6.png](img_6.png)
+![img_6.png](files/img/img_6.png)
 
 Успешная сборка:
-![img_7.png](img_7.png)
+![img_7.png](files/img/img_7.png)
 
-3. Declarative Pipeline в файл Jenkinsfile.
+3. Declarative Pipeline перенесён в файл Jenkinsfile.
+
 4. Multibranch Pipeline на запуск Jenkinsfile из репозитория.
+Выполняю сканирование удаленного репозитория для поиска веток, обнаружения Jenkinsfile, проверки изменения репозитория или изменения Jenkinsfile. 
+Результат сканирования:
+![img_9.png](files/img/img_9.png)
+
+Сборка Multibranch Pipeline выполняется успешно:
 5. Scripted Pipeline, наполнен скриптом из pipeline.
+![img_10.png](files/img/img_10.png)
+
 6. Внесены необходимые изменения, чтобы Pipeline запускал ansible-playbook без флагов --check --diff, если не установлен параметр при запуске джобы (prod_run = True).
-7. Изменения внесенные в Pipeline находятся в файле ScriptedJenkinsfile
+Сборка без параметра prod_run = True запустилась без флага --check --diff:
+ ![img_11.png](files/img/img_11.png)
+Сборка с параметром prod_run = True запустилась с флагом --check --diff:
+![img_12.png](files/img/img_12.png)
+
+7.  Изменения внесенные в Pipeline находятся в файле ScriptedJenkinsfile
+
 8. Репозиторий, на котором тестировался запуск Freestyle Job и Declarative Pipeline Job с запуском molecule test:
 Ссылка на Declarative Pipeline: https://github.com/DemoniumBlack/vector-role-molecule/blob/main/Jenkinsfile
 
