@@ -43,7 +43,7 @@
 
 > ### Результат:
 >
-1. Freestyle Job, запускает molecule test из моего репозитория с ролью vector-role:
+1. Freestyle Job, запускает molecule test из моего [репозитория](https://github.com/R-Gennadi/devops-netology/tree/main/ansible/vector-role) с ролью vector-role:
 В настройках сборки указан этот репозиторий:
 ![img_4.png](files/img/img_4.png)
 

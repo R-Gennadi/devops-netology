@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="test PC">
-      <change afterPath="$PROJECT_DIR$/terraform/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="modification2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/.yamllint" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/.yamllint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/defaults/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/defaults/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/handlers/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/handlers/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/meta/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/meta/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/molecule/default/converge.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/molecule/default/converge.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/molecule/default/molecule.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/molecule/default/molecule.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/molecule/default/verify.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/molecule/default/verify.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/tests/inventory" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/tests/inventory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/tests/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/tests/test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/tox-requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/tox-requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/tox.ini" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/tox.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible/vector-role/vars/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ansible/vector-role/vars/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ci/04-jenkins/readmy.md" beforeDir="false" afterPath="$PROJECT_DIR$/ci/04-jenkins/readmy.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,16 +70,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Rebasing main",
-    "last_opened_file_path": "/home/ubuntu/git/git_my",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "two.files.diff.last.used.file": "/home/ubuntu/git_my/README.md"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Rebasing main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ubuntu/git/git_my&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;/home/ubuntu/git_my/README.md&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ci/04-jenkins/files/img" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -117,11 +133,20 @@
       <option name="project" value="LOCAL" />
       <updated>1692363622424</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="modification2">
+      <option name="closed" value="true" />
+      <created>1710941685770</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710941685770</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test PC" />
-    <option name="LAST_COMMIT_MESSAGE" value="test PC" />
+    <MESSAGE value="modification2" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification2" />
   </component>
 </project>
