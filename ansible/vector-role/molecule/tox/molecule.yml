@@ -1,0 +1,23 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: podman
+platforms:  
+  # - name: Ubuntu_latest
+  #   image: ubuntu:latest
+  #   dockerfile: Dockerfile
+  #   command: /lib/systemd/systemd
+  #   privileged: true
+  #   pre_build_image: false
+
+  - name: c8
+    image: centos/centos:stream8
+    command: /sbin/init
+    privileged: True
+scenario:
+  test_sequence:
+    - destroy
+    - create
+    - converge
+    - destroy

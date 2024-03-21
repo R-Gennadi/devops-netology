@@ -10,6 +10,15 @@ Role Variables
 |----------------|--------|------------------------|
 | vector_version | string | vector package version |
 
+Example Playbook
+----------------
+
+License
+-------
+
+MIT
+
 Author Information
 ------------------
-Rgen
+
+Fedorchuk Dmitriy

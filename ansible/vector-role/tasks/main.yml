@@ -1,6 +1,16 @@
 ---
-- include_tasks: deb.yml
-  when: ansible_os_family == "Debian"
-  
-- include_tasks: rpm.yml
-  when: ansible_os_family == "RedHat"
+- name: Download and install vector packages for UBUNTU
+  become: true
+  ansible.builtin.apt:
+    deb: https://packages.timber.io/vector/{{ vector_version }}/vector_{{ vector_version }}-1_amd64.deb
+  notify: Start Vector service
+  when: ansible_facts['distribution'] == "Ubuntu"
+
+- name: Download and install vector packages for Centos8
+  become: true
+  ansible.builtin.yum:
+    name: https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-1.x86_64.rpm
+    state: present
+    disable_gpg_check: true
+  notify: Start Vector service
+  when: ansible_facts['distribution'] == "CentOS"

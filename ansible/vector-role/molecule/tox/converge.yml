@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include vector-role-no-molecule"
+      include_role:
+        name: "vector-role-no-molecule"

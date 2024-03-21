@@ -4,4 +4,3 @@
   ansible.builtin.service:
     name: vector
     state: restarted
-  when: ansible_facts.virtualization_type != "docker"
