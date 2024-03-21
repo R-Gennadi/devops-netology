@@ -109,7 +109,9 @@ pipeline {
 
 7.  Изменения внесенные в `files0` находятся в файле [files](https://github.com/R-Gennadi/devops-netology/blob/main/ansible/vector-role/scripted/jenkinsfile/files)
 
-8. Репозиторий, на котором тестировался запуск Freestyle Job и Declarative Pipeline Job с запуском molecule test: (https://github.com/R-Gennadi/devops-netology/tree/main/ansible/vector-role)
+8. Репозиторий, на котором тестировался запуск Freestyle Job и Declarative Pipeline Job с запуском molecule test:
+(https://github.com/R-Gennadi/devops-netology/tree/main/ansible/vector-role)
+
 Ссылка на Declarative Pipeline: (https://github.com/R-Gennadi/devops-netology/blob/main/ansible/vector-role/Jenkinsfile)
 
 Ссылка на Scripted Pipeline: (https://github.com/R-Gennadi/devops-netology/blob/main/ansible/vector-role/scripted/jenkinsfile/files)
