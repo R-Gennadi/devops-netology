@@ -90,15 +90,15 @@ pipeline {
 Успешная сборка:
 ![img_7.png](files/img/img_7.png)
 
-3. Declarative Pipeline перенесён в файл Jenkinsfile.
+3. Declarative Pipeline перенесён в файл [Jenkinsfile](https://github.com/R-Gennadi/devops-netology/blob/main/ansible/vector-role/Jenkinsfile).
 
-4. Multibranch Pipeline на запуск Jenkinsfile из репозитория.
+4. Multibranch Pipeline на запуск `Jenkinsfile` из репозитория.
 Выполняю сканирование удаленного репозитория для поиска веток, обнаружения Jenkinsfile, проверки изменения репозитория или изменения Jenkinsfile. 
 Результат сканирования:
 ![img_9.png](files/img/img_9.png)
 
 Сборка Multibranch Pipeline выполняется успешно:
-5. Scripted Pipeline, наполнен скриптом из pipeline.
+5. Scripted Pipeline, наполнен скриптом из [files0](https://github.com/R-Gennadi/devops-netology/blob/main/ansible/vector-role/scripted/jenkinsfile/files0).
 ![img_10.png](files/img/img_10.png)
 
 6. Внесены необходимые изменения, чтобы Pipeline запускал ansible-playbook без флагов --check --diff, если не установлен параметр при запуске джобы (prod_run = True).
@@ -107,11 +107,11 @@ pipeline {
 Сборка с параметром prod_run = True запустилась с флагом --check --diff:
 ![img_12.png](files/img/img_12.png)
 
-7.  Изменения внесенные в Pipeline находятся в файле ScriptedJenkinsfile
+7.  Изменения внесенные в `files0` находятся в файле [files](https://github.com/R-Gennadi/devops-netology/blob/main/ansible/vector-role/scripted/jenkinsfile/files)
 
-8. Репозиторий, на котором тестировался запуск Freestyle Job и Declarative Pipeline Job с запуском molecule test:
-Ссылка на Declarative Pipeline: https://github.com/DemoniumBlack/vector-role-molecule/blob/main/Jenkinsfile
+8. Репозиторий, на котором тестировался запуск Freestyle Job и Declarative Pipeline Job с запуском molecule test: (https://github.com/R-Gennadi/devops-netology/tree/main/ansible/vector-role)
+Ссылка на Declarative Pipeline: (https://github.com/R-Gennadi/devops-netology/blob/main/ansible/vector-role/Jenkinsfile)
 
-Ссылка на Scripted Pipeline:
+Ссылка на Scripted Pipeline: (https://github.com/R-Gennadi/devops-netology/blob/main/ansible/vector-role/scripted/jenkinsfile/files)
 
 ---
