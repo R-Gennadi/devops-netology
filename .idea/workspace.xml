@@ -59,12 +59,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/ubuntu/git/git_my",
+    "last_opened_file_path": "/home/ubuntu/git/git_my/monitoring/01-intro",
     "settings.editor.selected.configurable": "preferences.customizations",
     "two.files.diff.last.used.file": "/home/ubuntu/git_my/README.md"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/monitoring/01-intro" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/monitoring/02-system" />
       <recent name="$PROJECT_DIR$/monitoring/01-intro" />
@@ -119,7 +122,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711201527419</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modification2">
+      <option name="closed" value="true" />
+      <created>1711212539044</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711212539044</updated>
+    </task>
+    <task id="LOCAL-00007" summary="modification2">
+      <option name="closed" value="true" />
+      <created>1711212661312</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711212661312</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
