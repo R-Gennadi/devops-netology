@@ -2,7 +2,7 @@
 
 ## Подготовка к выполнению
 
-1. Получить бесплатную версию Jira - https://www.atlassian.com/ru/software/jira/work-management/free (скопируйте ссылку в адресную строку). Вы можете воспользоваться любым(в том числе бесплатным vpn сервисом) если сайт у вас недоступен. Кроме того вы можете скачать [docker образ](https://hub.docker.com/r/atlassian/jira-software/#) и запустить на своем хосте self-managed версию jira.
+1. Получить бесплатную версию Jira...
 2. Настроить её для своей команды разработки.
 3. Создать доски Kanban и Scrum.
 >результат
@@ -34,6 +34,7 @@ scrum = Projects -> Create project -> Scrum -> Use template -> Company-managed -
 5. Done fix -> On test.
 6. On test -> On fix, Done.
 7. Done -> Closed, Open.
+![img.png](files/img/img2.png)
 
 Остальные задачи должны проходить по упрощённому workflow:
 
@@ -42,6 +43,11 @@ scrum = Projects -> Create project -> Scrum -> Use template -> Company-managed -
 3. Done develop -> On test.
 4. On test -> On develop, Done.
 5. Done -> Closed, Open.
+![img.png](files/img/img3.png)
+
+Схема Workflow
+
+![img.png](files/img/img4.png)
 
 **Что нужно сделать**
 
@@ -52,10 +58,7 @@ scrum = Projects -> Create project -> Scrum -> Use template -> Company-managed -
 1. Перейдите в Scrum, запланируйте новый спринт, состоящий из задач эпика и одного бага, стартуйте спринт, проведите задачи до состояния Closed. Закройте спринт.
 2. Если всё отработалось в рамках ожидания — выгрузите схемы workflow для импорта в XML. Файлы с workflow и скриншоты workflow приложите к решению задания.
 
----
-
-### Как оформить решение задания
-
-Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
+[BUG](files%2Fexport_xml%2FBUG.xml)
+[all](files%2Fexport_xml%2all.xml)
 
 ---

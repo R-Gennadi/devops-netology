@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answer.md" beforeDir="false" afterPath="$PROJECT_DIR$/answer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virt.md" beforeDir="false" afterPath="$PROJECT_DIR$/virt.md" afterDir="false" />
+    <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="modification2">
+      <change afterPath="$PROJECT_DIR$/monitoring/01-intro/readmy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ci/01-intro/readmy.md" beforeDir="false" afterPath="$PROJECT_DIR$/ci/01-intro/readmy.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,26 +45,31 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2TgsmT8yV77xq3RzVtoOzKNJ0OT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ubuntu/git/git_my&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;/home/ubuntu/git_my/README.md&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Rebasing main",
+    "last_opened_file_path": "/home/ubuntu/git/git_my",
+    "settings.editor.selected.configurable": "preferences.customizations",
+    "two.files.diff.last.used.file": "/home/ubuntu/git_my/README.md"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/monitoring/01-intro" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -111,8 +114,20 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test PC" />
-    <option name="LAST_COMMIT_MESSAGE" value="test PC" />
+    <MESSAGE value="modification2" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification2" />
   </component>
 </project>
