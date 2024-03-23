@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="modification2">
-      <change beforePath="$PROJECT_DIR$/monitoring/01-intro/readmy.md" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring/01-systems/readmy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoring/01-systems/readmy.md" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring/01-systems/readmy.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711213595741</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="modification2">
+      <option name="closed" value="true" />
+      <created>1711215640650</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711215640650</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
