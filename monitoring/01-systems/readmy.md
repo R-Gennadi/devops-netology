@@ -133,17 +133,17 @@ ___Pull-системы___ мониторинга (от англ. pull - тяну
 
 #
 7. Скриншот веб-интерфейса ПО chronograf - http://localhost:8888.
-![img.png](img.png)
-![img_1.png](img_1.png)
+![img.png](files/img/img.png)
+![img_1.png](files/img/img_1.png)
 
 #
 8. Скриншот с отображением метрик утилизации cpu из веб-интерфейса.
-![img_2.png](img_2.png)
+![img_2.png](files/img/img_2.png)
 
 #
-9. f 
+9. Добавьте в конфигурацию telegraf следующий плагин - docker:
 
-
+![img_3.png](files/img/img_3.png)
 
 
 ---
