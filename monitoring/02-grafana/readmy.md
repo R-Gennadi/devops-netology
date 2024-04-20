@@ -39,7 +39,7 @@ CPULA 1/5/15;
 > ### Результат:
 >
 1.
-![img.png](img.png)
+![img.png](files/img/img.png)
 #
 
 2.  Dashboard c panels:
@@ -48,7 +48,8 @@ CPULA 1/5/15;
 100 - avg(irate(node_cpu_seconds_total{job="node-exporter", mode="idle"}[1m])) * 100
 ```
 Скриншот:
-![img_1.png](img_1.png)
+
+![img_1.png](files/img/img_1.png)
 #
 
 - CPULA 1/5/15:
@@ -58,7 +59,8 @@ avg(node_load5{job="node-exporter"})
 avg(node_load15{job="node-exporter"})
 ```
 Скриншот:
-![img_2.png](img_2.png)
+
+![img_2.png](files/img/img_2.png)
 #
  
 - количество свободной оперативной памяти:
@@ -66,24 +68,37 @@ avg(node_load15{job="node-exporter"})
 node_memory_MemFree_bytes
 ```
 Скриншот:
-![img_3.png](img_3.png)
+
+![img_3.png](files/img/img_3.png)
 #
 - количество места на файловой системе:
 ```text
 node_filesystem_avail_bytes
 ```
 Скриншот:
-![img_4.png](img_4.png)
+
+![img_4.png](files/img/img_4.png)
 
 Общий скриншот Dashboard:
-![img_5.png](img_5.png)
+
+![img_5.png](files/img/img_5.png)
 #
 
 3.  
+
+- Скриншот правил alert:
+
+![img_6.png](files/img/img_6.png)
+#
+
+- скриншот итоговой Dashboard:
+
+![img_7.png](files/img/img_7.png)
 
 #
 
 4. 
 
+[Листинг](mystack/prometheus_bashboard_netology103.json)
 
 ---
