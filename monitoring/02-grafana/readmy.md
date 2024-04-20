@@ -99,6 +99,6 @@ node_filesystem_avail_bytes
 
 4. 
 
-[Листинг](mystack/prometheus_bashboard_netology103.json)
+[Листинг](monitoring/02-grafana/files/json/dashboard.json)
 
 ---
