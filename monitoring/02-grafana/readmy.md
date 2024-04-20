@@ -99,6 +99,6 @@ node_filesystem_avail_bytes
 
 4. 
 
-[Листинг](monitoring/02-grafana/files/json/dashboard.json)
+[Листинг](files/json/dashboard.json)
 
 ---
