@@ -1,7 +1,7 @@
 # Домашнее задание к занятию 14 «Средство визуализации Grafana»
 
-
-<details> <summary> ## Обязательные задания </summary>
+## Обязательные задания
+<details> <summary> . </summary>
 
 ## Задание 1
 Используя директорию help внутри этого домашнего задания, запустите связку prometheus-grafana.
@@ -31,7 +31,7 @@ CPULA 1/5/15;
 #
 
 ## Задание 4
-Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
+Сохраните ваш Dashboard. Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
 В качестве решения задания приведите листинг этого файла.
 
 </details>
@@ -39,11 +39,44 @@ CPULA 1/5/15;
 > ### Результат:
 >
 1.
-
+![img.png](img.png)
 #
 
-2. 
+2.  Dashboard c panels:
+- утилизация CPU для node-exporter (в процентах, 100-idle):
+```text
+100 - avg(irate(node_cpu_seconds_total{job="node-exporter", mode="idle"}[1m])) * 100
+```
+Скриншот:
+![img_1.png](img_1.png)
+#
 
+- CPULA 1/5/15:
+```text
+avg(node_load1{job="node-exporter"})
+avg(node_load5{job="node-exporter"})
+avg(node_load15{job="node-exporter"})
+```
+Скриншот:
+![img_2.png](img_2.png)
+#
+ 
+- количество свободной оперативной памяти:
+```text
+node_memory_MemFree_bytes
+```
+Скриншот:
+![img_3.png](img_3.png)
+#
+- количество места на файловой системе:
+```text
+node_filesystem_avail_bytes
+```
+Скриншот:
+![img_4.png](img_4.png)
+
+Общий скриншот Dashboard:
+![img_5.png](img_5.png)
 #
 
 3.  
