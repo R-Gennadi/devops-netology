@@ -42,4 +42,23 @@ Filebeat следует сконфигурировать для отправки
 
 > ### Результат:
 >
-1.
+1. 
+- скриншот `docker ps` через 5 минут после старта всех контейнеров
+
+![img.png](Files/img/img.png)
+ 
+- скриншот интерфейса kibana
+
+![img_1.png](Files/img/img_1.png)
+
+#
+
+2. 
+- создайте несколько index-patterns из имеющихся.
+
+![img_2.png](Files/img/img_2.png)
+
+- логи должны порождать индекс logstash-* в elasticsearch
+
+![img_3.png](Files/img/img_3.png)
+---
