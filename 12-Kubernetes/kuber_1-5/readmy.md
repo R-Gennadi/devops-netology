@@ -256,6 +256,9 @@ Commercial support is available at
 100   612  100   612    0     0   191k      0 --:--:-- --:--:-- --:--:--  298k
 ```
 ### 5.
+Ссылка на манифест Deployment c frontend - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-5/file/scr/frontend.yaml
+
+Ссылка на манифест Deployment c backend - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-5/file/scr/backend.yaml
 
 ------
 
@@ -436,6 +439,6 @@ ubuntu@ubuntu2004:~/other/kuber_1-5/scr$ curl 158.160.111.162/api
 WBITT Network MultiTool (with NGINX) - backend-c87cbc5f4-wkp47 - 10.1.123.182 - HTTP: 80 , HTTPS: 443 . (Formerly praqma/network-multitool)
 ```
 ### 4.
-
+Ссылка на манифест Ingress - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-5/file/scr/ingress.yaml
 
 ------
