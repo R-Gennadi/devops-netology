@@ -1,6 +1,6 @@
 # Домашнее задание к занятию «Запуск приложений в K8S»
 
-## Задача 
+## Задания
 <details> <summary> . </summary>
 ### Цель задания
 
@@ -55,10 +55,10 @@
 #
 
 
-> # Решения:
+> ## Решения:
 >
-##  Задание 1.
-### 1.
+###  Задание 1.
+#### 1.
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -161,7 +161,7 @@ Replacing default HTTP port (80) with the value specified by the user - (HTTP_PO
 ```
 Ошибка не появляется, контейнеры работают
 
-### 2. 
+#### 2. 
 Для решения вопроса заменим значение ```replicas``` на 2 и обновим deployment:
 ```yaml
 apiVersion: apps/v1
@@ -197,7 +197,7 @@ NAME                                   READY   STATUS    RESTARTS   AGE     IP  
 netology-deployment-5d89c69f57-jrwhc   2/2     Running   0          3m43s   10.1.123.145   netology-01   <none>           <none>
 netology-deployment-5d89c69f57-wqclk   2/2     Running   0          6s      10.1.123.146   netology-01   <none>           <none>
 ```
-### 3. 
+#### 3. 
 
 ```bash
 root@ubuntu2004:/home/ubuntu/other/kuber_1-3/scr# kubectl get pods -o wide
@@ -210,7 +210,7 @@ NAME                                   READY   STATUS    RESTARTS   AGE     IP  
 netology-deployment-5d89c69f57-jrwhc   2/2     Running   0          3m43s   10.1.123.145   netology-01   <none>           <none>
 netology-deployment-5d89c69f57-wqclk   2/2     Running   0          6s      10.1.123.146   netology-01   <none>           <none>
 ```
-### 4. 
+#### 4. 
 ```yaml
 apiVersion: v1
 kind: Service
@@ -244,7 +244,7 @@ kubernetes           192.168.101.26:16443                                       
 deployment-service   10.1.123.145:443,10.1.123.146:443,10.1.123.145:80 + 3 more...   6m49s
 
 ```
-### 5. 
+#### 5. 
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -320,9 +320,9 @@ root@ubuntu2004:/home/ubuntu/other/kuber_1-3/scr# kubectl exec test-multitool --
 
 ------
 
-## Задание 2. 
+### Задание 2. 
 
-### 1. 
+#### 1. 
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -346,7 +346,7 @@ spec:
         image: busybox
         command: ['sh', '-c', "until nslookup svc-nginx-init.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for svc-nginx-init; sleep 2; done"]
 ```
-### 2.
+#### 2.
 ```bash
 root@ubuntu2004:/home/ubuntu/other/kuber_1-3/scr# kubectl apply -f nginx_init.yaml 
 deployment.apps/nginx-init created
@@ -370,7 +370,7 @@ nginx-init-5fbf9bd49c-stqwt            0/1     Init:0/1   0          0s
 nginx-init-5fbf9bd49c-stqwt            0/1     Init:0/1   0          1s
 nginx-init-5fbf9bd49c-stqwt            0/1     Init:0/1   0          3s
 ```
-### 3.
+#### 3.
 ```yaml
 apiVersion: v1
 kind: Service
@@ -408,7 +408,7 @@ nginx-init-5fbf9bd49c-stqwt            0/1     Init:0/1   0          3s
 nginx-init-5fbf9bd49c-stqwt            0/1     PodInitializing   0          105s
 nginx-init-5fbf9bd49c-stqwt            1/1     Running           0          106s
 ```
-### 4. 
+#### 4. 
 ```bash
 root@ubuntu2004:/home/ubuntu/other/kuber_1-3/scr# kubectl apply -f nginx_init.yaml 
 deployment.apps/nginx-init created
