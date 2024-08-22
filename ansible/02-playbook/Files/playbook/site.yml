@@ -69,7 +69,7 @@
         src: /tmp/vector-{{ vector_version }}-{{ vector_architecture }}-unknown-linux-gnu.tar.gz
         dest: /etc/vector
         remote_src: true
-    - name: Template file
+    - name: Template readmy.md
       become: true
       ansible.builtin.template:
         src: vector.toml.j2

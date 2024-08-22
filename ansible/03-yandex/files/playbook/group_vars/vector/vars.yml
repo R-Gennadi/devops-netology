@@ -4,7 +4,7 @@ vector_config_dir: "/etc/vector"
 data_dir: "/var/lib/vector"
 sources:
   our_log:
-    type: file
+    type: readmy.md
     include:
       - "/home/cloud-user/logs/*.log"
     ignore_older: 600

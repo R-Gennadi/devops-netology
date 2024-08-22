@@ -128,7 +128,7 @@
       ansible.builtin.yum:
         name: "{{ vector_url }}"
         state: present
-    - name: Vector | Template file
+    - name: Vector | Template readmy.md
       ansible.builtin.template:
         src: vector.yml.j2
         dest: vector.yml
