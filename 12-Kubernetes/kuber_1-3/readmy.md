@@ -160,6 +160,8 @@ Replacing default HTTP port (80) with the value specified by the user - (HTTP_PO
 ```
 Ошибка не появляется, контейнеры работают
 
+Ссылка на манифест Deployment - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-3/file/scr/my_deployment.yaml
+
 #### 2. 
 Для решения вопроса заменим значение ```replicas``` на 2 и обновим deployment:
 ```yaml
@@ -241,8 +243,9 @@ root@ubuntu2004:/home/ubuntu/other/kuber_1-3/scr# kubectl get ep -o wide
 NAME                 ENDPOINTS                                                       AGE
 kubernetes           192.168.101.26:16443                                            150m
 deployment-service   10.1.123.145:443,10.1.123.146:443,10.1.123.145:80 + 3 more...   6m49s
-
 ```
+Ссылка на манифест Service -https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-3/file/scr/svc_nginx.yaml
+
 #### 5.
 ```yaml
 apiVersion: v1
@@ -316,6 +319,7 @@ root@ubuntu2004:/home/ubuntu/other/kuber_1-3/scr# kubectl exec test-multitool --
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0WBITT Network MultiTool (with NGINX) - netology-deployment-5d89c69f57-jrwhc - 10.1.123.145 - HTTP: 81 , HTTPS: 443 . (Formerly praqma/network-multitool)
 100   153  100   153    0     0  24849      0 --:--:-- --:--:-- --:--:-- 30600
 ```
+Ссылка на манифест с подом multitool - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-3/file/scr/test_multitool.yaml
 
 ------
 
@@ -369,6 +373,8 @@ nginx-init-5fbf9bd49c-stqwt            0/1     Init:0/1   0          0s
 nginx-init-5fbf9bd49c-stqwt            0/1     Init:0/1   0          1s
 nginx-init-5fbf9bd49c-stqwt            0/1     Init:0/1   0          3s
 ```
+Ссылка на манифест Deployment - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-3/file/scr/nginx_init.yaml
+
 #### 3.
 ```yaml
 apiVersion: v1
@@ -436,4 +442,5 @@ kubernetes           ClusterIP   10.152.183.1     <none>        443/TCP         
 deployment-service   ClusterIP   10.152.183.77    <none>        80/TCP,443/TCP,81/TCP   58m     app=main
 svc-nginx-init       ClusterIP   10.152.183.172   <none>        80/TCP                  2m37s   app=web-init
 ```
+Ссылка на манифест Service - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-3/file/scr/svc_nginx_init.yaml
 #
