@@ -192,4 +192,10 @@ Request Body:
 
 ![img_1.png](file/img/img_1.png)
 
+Ссылки на манифесты:
+
+Pod - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-2/file/scr/my_pod.yaml
+
+Service - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-2/file/scr/my_service.yaml
+
 #
