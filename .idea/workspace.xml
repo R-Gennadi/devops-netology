@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="modification2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12-Kubernetes/kuber_1-2/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/12-Kubernetes/kuber_1-2/readmy.md" beforeDir="false" afterPath="$PROJECT_DIR$/12-Kubernetes/kuber_1-2/readmy.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -365,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724336035192</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="modification2">
+      <option name="closed" value="true" />
+      <created>1724336060859</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1724336060859</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

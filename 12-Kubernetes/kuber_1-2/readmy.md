@@ -57,9 +57,10 @@
 #
 
 
-> ### Решения:
+> # Решения:
 >
-# Задание 1 Создать Pod с именем hello-world
+
+## Задание 1 Создать Pod с именем hello-world
 1. 
 ```yaml
 apiVersion: v1
@@ -76,23 +77,24 @@ spec:
 
 2. 
 ```bash
-nikulinn@nikulin:~/other/kuber_1-2/src$ kubectl apply -f my_pod.yaml 
+ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl apply -f my_pod.yaml 
 pod/hello-world created
-nikulinn@nikulin:~/other/kuber_1-2/src$ kubectl get pods -o wide
+ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl get pods -o wide
 NAME          READY   STATUS    RESTARTS   AGE   IP             NODE          NOMINATED NODE   READINESS GATES
 hello-world   1/1     Running   0          6s    10.1.123.143   netology-01   <none>           <none>
 ```
 
 3. 
 ```bash
-nikulinn@nikulin:~/other/kuber_1-2/src$ kubectl port-forward hello-world 8088:8080
+ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl port-forward hello-world 8088:8080
 Forwarding from 127.0.0.1:8088 -> 8080
 Forwarding from [::1]:8088 -> 8080
 Handling connection for 8088
 ```
+![img.png](file/img/img.png)
 #
 
-# Задание 2. Создать Service и подключить его к Pod
+## Задание 2. Создать Service и подключить его к Pod
 1.  
 ```yaml
 apiVersion: v1
@@ -108,7 +110,7 @@ spec:
 ```
 2. 
 ```bash
-nikulinn@nikulin:~/other/kuber_1-2/src$ kubectl get pods -o wide
+ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl get pods -o wide
 NAME           READY   STATUS    RESTARTS   AGE   IP             NODE          NOMINATED NODE   READINESS GATES
 hello-world    1/1     Running   0          26m   10.1.123.143   netology-01   <none>           <none>
 netology-web   1/1     Running   0          7s    10.1.123.145   netology-01   <none>           <none>
@@ -127,7 +129,7 @@ spec:
     app: netology
 ```
 ```bash
-nikulinn@nikulin:~/other/kuber_1-2/src$ kubectl describe svc netology-svc
+ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl describe svc netology-svc
 Name:              netology-svc
 Namespace:         default
 Labels:            <none>
@@ -143,19 +145,19 @@ TargetPort:        8080/TCP
 Endpoints:         10.1.123.145:8080
 Session Affinity:  None
 Events:            <none>
-nikulinn@nikulin:~/other/kuber_1-2/src$ kubectl get svc -o wide
+ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl get svc -o wide
 NAME           TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE     SELECTOR
 kubernetes     ClusterIP   10.152.183.1    <none>        443/TCP    3d5h    <none>
 netology-svc   ClusterIP   10.152.183.71   <none>        8080/TCP   6m44s   app=netology
 ```
 4. 
 ```bash
-nikulinn@nikulin:~/other/kuber_1-2/src$ kubectl port-forward svc/netology-svc 8088:8080
+ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl port-forward svc/netology-svc 8088:8080
 Forwarding from 127.0.0.1:8088 -> 8080
 Forwarding from [::1]:8088 -> 8080
 ```
 ```bash
-nikulinn@nikulin:~/other/kuber_1-2$ curl localhost:8088
+ubuntu@ubuntu2004:~/other/kuber_1-2$ curl localhost:8088
 
 
 Hostname: netology-web
@@ -183,3 +185,6 @@ Request Headers:
 Request Body:
         -no body in request-
 ```
+![img_1.png](file/img/img_1.png)
+
+#
