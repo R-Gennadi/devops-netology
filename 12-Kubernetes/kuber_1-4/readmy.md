@@ -339,6 +339,11 @@ ubuntu@ubuntu2004:~/other/kuber_1-4/scr$ kubectl exec -n dz4 test-multitool -- c
 WBITT Network MultiTool (with NGINX) - netology-deployment-77497ddc64-rmjhc - 10.1.123.164 - HTTP: 8080 , HTTPS: 443 . (Formerly praqma/network-multitool)
 ```
 #### 5. 
+Ссылка на манифест Deployment - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-4/file/scr/my_deployment.yaml
+
+Ссылка на манифест Service - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-4/file/scr/svc_nginx.yaml
+
+Ссылка на манифест Pod -  https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-4/file/scr/test_multitool.yaml
 
 ------
 
@@ -411,5 +416,6 @@ WBITT Network MultiTool (with NGINX) - netology-deployment-77497ddc64-4t9gd - 10
 ```
 
 #### 3. 
+Ссылка на манифест Service - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_1-4/file/scr/svc_nginx_nodeport.yaml
 
 ------
