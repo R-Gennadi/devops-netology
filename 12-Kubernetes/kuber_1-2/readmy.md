@@ -2,6 +2,7 @@
 
 ## Задача 
 <details> <summary> . </summary>
+
 ### Цель задания
 
 В тестовой среде для работы с Kubernetes, установленной в предыдущем ДЗ, необходимо развернуть Pod с приложением и подключиться к нему со своего локального компьютера. 
@@ -54,14 +55,13 @@
 На доработку — задание выполнено частично или не выполнено, в логике выполнения заданий есть противоречия, существенные недостатки.
 
 </details>
-#
 
 
 > # Решения:
 >
 
 ## Задание 1 Создать Pod с именем hello-world
-1. 
+### 1. 
 
 ```yaml
 apiVersion: v1
@@ -76,7 +76,7 @@ spec:
     - containerPort: 8080
 ```
 
-2. 
+### 2. 
 
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl apply -f my_pod.yaml 
@@ -86,7 +86,7 @@ NAME          READY   STATUS    RESTARTS   AGE   IP             NODE          NO
 hello-world   1/1     Running   0          6s    10.1.123.143   netology-01   <none>           <none>
 ```
 
-3. 
+### 3. 
 
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl port-forward hello-world 8088:8080
@@ -99,7 +99,7 @@ Handling connection for 8088
 #
 
 ## Задание 2. Создать Service и подключить его к Pod
-1.  
+### 1.  
 
 ```yaml
 apiVersion: v1
@@ -114,7 +114,7 @@ spec:
     image: gcr.io/kubernetes-e2e-test-images/echoserver:2.2
 ```
 
-2. 
+### 2. 
 
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl get pods -o wide
@@ -123,7 +123,7 @@ hello-world    1/1     Running   0          26m   10.1.123.143   netology-01   <
 netology-web   1/1     Running   0          7s    10.1.123.145   netology-01   <none>           <none>
 ```
 
-3. 
+### 3. 
 
 ```yaml
 apiVersion: v1
@@ -161,7 +161,7 @@ kubernetes     ClusterIP   10.152.183.1    <none>        443/TCP    3d5h    <non
 netology-svc   ClusterIP   10.152.183.71   <none>        8080/TCP   6m44s   app=netology
 ```
 
-4. 
+### 4. 
 
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl port-forward svc/netology-svc 8088:8080
