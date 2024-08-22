@@ -57,7 +57,7 @@
 >
 ###  Задание 1.
 #### 1. 
-Создадим пространство имен для ДЗ:
+Создадим пространство имен:
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-4$ kubectl create namespace dz4
 namespace/dz4 created
@@ -159,7 +159,7 @@ netology-deployment-77497ddc64-4t9gd   2/2     Running   0          5m51s   10.1
 netology-deployment-77497ddc64-rmjhc   2/2     Running   0          5m51s   10.1.123.164   netology-01   <none>           <none>
 test-multitool                         1/1     Running   0          7s      10.1.123.165   netology-01   <none>           <none>
 ```
-Тестируем, что ПОДы отвечают по ожидаемым портам:
+Проверяем, что ПОДы отвечают по ожидаемым портам:
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-4/scr$ kubectl exec -n dz4 test-multitool -- curl 10.1.123.162:80
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -264,7 +264,7 @@ ubuntu@ubuntu2004:~/other/kuber_1-4/scr$ kubectl exec -n dz4 test-multitool -- c
 100   155  100   155    0     0  14693      0 --:--:-- --:--:-- --:--:-- 15500
 WBITT Network MultiTool (with NGINX) - netology-deployment-77497ddc64-rmjhc - 10.1.123.164 - HTTP: 8080 , HTTPS: 443 . (Formerly praqma/network-multitool)
 ```
-Тестируем, что Сервис отвечает по нужным портам:
+Проверяем, что Сервис отвечает по нужным портам:
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-4/scr$ kubectl exec -n dz4 test-multitool -- curl 10.152.183.134:9001
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
