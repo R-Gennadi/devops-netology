@@ -57,8 +57,43 @@
 > ### Решения:
 >
 #
-1. sdfsd
+1. Устанавливаю MicroK8S на локальную машину
+![img.png](File/Img/img.png)
+Добавляю пользователя в группу microk8s, создаю директорию с конфигурацией и даю пользователю доступ к этой директории:
+![img_1.png](File/Img/img_1.png)
 
+проверяю статус MicroK8S:
+![img_2.png](File/Img/img_2.png)
+
+Устанавливаю Kubernetes Dashboard:
+![img_3.png](File/Img/img_3.png)
+
+добавляю адрес для внешнего подключения:
+![img_4.png](File/Img/img_4.png)
+
+Обновляю сертификаты:
+![img_5.png](File/Img/img_5.png)
 
 #
-2. 
+2. Установка и настройка локального kubectl
+
+Установить на локальную машину kubectl
+![img_6.png](File/Img/img_6.png)
+
+Настроить локально подключение к кластеру.
+```bash
+ubuntu@ubuntu2004:~$ kubectl get nodes
+NAME          STATUS   ROLES    AGE   VERSION
+ubuntu2004   Ready    <none>   79m   v1.29.0
+```
+
+Подключиться к дашборду с помощью port-forward.
+```bash
+ubuntu@ubuntu2004:~$ kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443
+Forwarding from 127.0.0.1:10443 -> 8443
+Forwarding from [::1]:10443 -> 8443
+Handling connection for 10443
+```
+![img_7.png](File/Img/img_7.png)
+#
+
