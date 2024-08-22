@@ -159,7 +159,7 @@ netology-deployment-77497ddc64-4t9gd   2/2     Running   0          5m51s   10.1
 netology-deployment-77497ddc64-rmjhc   2/2     Running   0          5m51s   10.1.123.164   netology-01   <none>           <none>
 test-multitool                         1/1     Running   0          7s      10.1.123.165   netology-01   <none>           <none>
 ```
-Тестируем, что ПОДы отыечают по ожидаемым портам:
+Тестируем, что ПОДы отвечают по ожидаемым портам:
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-4/scr$ kubectl exec -n dz4 test-multitool -- curl 10.1.123.162:80
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current

@@ -58,7 +58,6 @@
 >
 ###  Задание 1.
 #### 1.
-.
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -82,7 +81,6 @@ spec:
       - name: multitool
         image: wbitt/network-multitool 
 ```
-.
 ```bash
 root@ubuntu2004:/home/ubuntu/other/kuber_1-3/scr# kubectl apply -f my_deployment.yaml 
 deployment.apps/netology-deployment created
@@ -245,8 +243,7 @@ kubernetes           192.168.101.26:16443                                       
 deployment-service   10.1.123.145:443,10.1.123.146:443,10.1.123.145:80 + 3 more...   6m49s
 
 ```
-#### 5. 
-.
+#### 5.
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -257,7 +254,6 @@ spec:
     - image: wbitt/network-multitool
       name: test-multitool
 ```
-.
 ```bash
 root@ubuntu2004:/home/ubuntu/other/kuber_1-3/scr# kubectl apply -f test_multitool.yaml 
 pod/test-multitool created

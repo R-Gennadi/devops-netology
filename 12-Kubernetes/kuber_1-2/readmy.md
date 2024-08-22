@@ -61,8 +61,7 @@
 >
 
 ## Задание 1 Создать Pod с именем hello-world
-### 1. 
-.
+### 1.
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -76,8 +75,7 @@ spec:
     - containerPort: 8080
 ```
 
-### 2. 
-.
+### 2.
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl apply -f my_pod.yaml 
 pod/hello-world created
@@ -86,8 +84,7 @@ NAME          READY   STATUS    RESTARTS   AGE   IP             NODE          NO
 hello-world   1/1     Running   0          6s    10.1.123.143   netology-01   <none>           <none>
 ```
 
-### 3. 
-.
+### 3.
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl port-forward hello-world 8088:8080
 Forwarding from 127.0.0.1:8088 -> 8080
@@ -99,8 +96,7 @@ Handling connection for 8088
 #
 
 ## Задание 2. Создать Service и подключить его к Pod
-### 1.  
-.
+### 1.
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -114,8 +110,7 @@ spec:
     image: gcr.io/kubernetes-e2e-test-images/echoserver:2.2
 ```
 
-### 2. 
-.
+### 2.
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl get pods -o wide
 NAME           READY   STATUS    RESTARTS   AGE   IP             NODE          NOMINATED NODE   READINESS GATES
@@ -123,8 +118,7 @@ hello-world    1/1     Running   0          26m   10.1.123.143   netology-01   <
 netology-web   1/1     Running   0          7s    10.1.123.145   netology-01   <none>           <none>
 ```
 
-### 3. 
-.
+### 3.
 ```yaml
 apiVersion: v1
 kind: Service
@@ -137,7 +131,6 @@ spec:
   selector:
     app: netology
 ```
-.
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl describe svc netology-svc
 Name:              netology-svc
@@ -161,14 +154,12 @@ kubernetes     ClusterIP   10.152.183.1    <none>        443/TCP    3d5h    <non
 netology-svc   ClusterIP   10.152.183.71   <none>        8080/TCP   6m44s   app=netology
 ```
 
-### 4. 
-.
+### 4.
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-2/src$ kubectl port-forward svc/netology-svc 8088:8080
 Forwarding from 127.0.0.1:8088 -> 8080
 Forwarding from [::1]:8088 -> 8080
 ```
-.
 ```bash
 ubuntu@ubuntu2004:~/other/kuber_1-2$ curl localhost:8088
 
