@@ -176,7 +176,7 @@ current date = Sat Feb 17 11:00:32 UTC 2024
 netology-app-multitool-busybox-756d85d698-t88g5:/# 
 ```
 Файл, созданный в контейнере Busybox доступен для чтения контейнером multitool
-Ссылка на манифест Deployment - 
+Ссылка на манифест Deployment - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_2-1/file/scr/deployment_busybox_multitool.yaml
 
 ------
 
@@ -296,4 +296,7 @@ Feb 17 11:26:57 netology-01 systemd[1]: run-containerd-runc-k8s.io-ae2d1a2e14884
 Feb 17 11:27:00 netology-01 systemd[1]: run-containerd-runc-k8s.io-74926efc36904299715e726d9f0c1ebffa05d8c1210017fae8de191810b2bd5e-runc.MTOX8Z.mount: Succeeded.
 Feb 17 11:27:30 netology-01 systemd[1]: run-containerd-runc-k8s.io-74926efc36904299715e726d9f0c1ebffa05d8c1210017fae8de191810b2bd5e-runc.ZE3Sjz.mount: Succeeded.
 ```
-Файл логов доступен.
+Файл логов доступен. 
+Ссылка на манифест DaemonSet - https://github.com/R-Gennadi/devops-netology/blob/main/12-Kubernetes/kuber_2-1/file/scr/DaemonSet_multitool.yaml
+
+------
