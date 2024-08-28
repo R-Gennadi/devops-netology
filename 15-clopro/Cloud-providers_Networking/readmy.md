@@ -27,7 +27,7 @@
 >
 ###  Задание .
 
-[terraform](file%2scr%2Fterraform)
+[terraform](file%2Fscr%2Fterraform)
 
 <details>
 <summary>terraform plan</summary>
@@ -298,7 +298,7 @@ Note: You didn't use the -out option to save this plan, so Terraform can't guara
 </details>
 
 Виртуальные машины:
-![img.png](file/img/img.png)
+![img.png](file%2Fimg%2Fimg.png)
 
 
 Подсети:

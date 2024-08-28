@@ -58,7 +58,7 @@ version.BuildInfo{Version:"v3.14.2", GitCommit:"c309b6f0ff63856811846ce18f3bdc93
 ```
 Подготовим ```deployment``` ```service``` и разместим их в директории ```templates/```:
 
-- [templates/deployment.yaml](scr%2Fhelm_chart_nginx%2Ftemplates%2Fdeployment.yaml)
+- [templates/deployment.yaml](file%2Fscr%2Fhelm_chart_nginx%2Ftemplates%2Fdeployment.yaml)
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
