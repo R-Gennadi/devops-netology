@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="modification2">
-      <change afterPath="$PROJECT_DIR$/15-clopro/Cloud-providers_Networking/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12-Kubernetes/kuber_2-5/readmy.md" beforeDir="false" afterPath="$PROJECT_DIR$/12-Kubernetes/kuber_2-5/readmy.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/15-clopro/Cloud-providers_Networking/readmy.md" beforeDir="false" afterPath="$PROJECT_DIR$/15-clopro/Cloud-providers_Networking/readmy.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,22 +92,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691476219114</updated>
-    </task>
-    <task id="LOCAL-00020" summary="modification2">
-      <option name="closed" value="true" />
-      <created>1713613698559</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1713613698559</updated>
-    </task>
-    <task id="LOCAL-00021" summary="modification2">
-      <option name="closed" value="true" />
-      <created>1718528425845</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1718528425845</updated>
     </task>
     <task id="LOCAL-00022" summary="modification2">
       <option name="closed" value="true" />
@@ -486,7 +469,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724581986905</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="modification2">
+      <option name="closed" value="true" />
+      <created>1724868097893</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1724868097893</updated>
+    </task>
+    <task id="LOCAL-00070" summary="modification2">
+      <option name="closed" value="true" />
+      <created>1724868315423</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1724868315423</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
