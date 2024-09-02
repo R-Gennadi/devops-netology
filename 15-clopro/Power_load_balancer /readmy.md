@@ -95,7 +95,7 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 
  - Конфигурация [bucket.tf](file%2Fterraform%2Fbucket.tf)
 
- - Скрин Бакета ![img_1.png](file%2Fimg%2Fimg_1.png)
+ - Скрин Бакета 
 ![img.png](file/img/img.png)
 
 Полученная ссылка для скачивания - https://storage.yandexcloud.net/rg-netology-bucket/space.jpg
@@ -114,7 +114,7 @@ echo "<html><h1>My cool web-server</h1></html>" > index.html
 
 ![img_3.png](file/img/img_3.png)
    - Скрин картинки на инстансах из Instance Group 
-![img_5.png](file%2Fimg%2Fimg_5.png)  
+
 ![img_4.png](file/img/img_4.png)
    
 ![img_5.png](file/img/img_5.png)
