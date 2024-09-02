@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="modification2">
-      <change afterPath="$PROJECT_DIR$/15-clopro/Power_load_balancer /img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15-clopro/Power_load_balancer /img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15-clopro/Power_load_balancer /img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15-clopro/Power_load_balancer /img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15-clopro/Power_load_balancer /img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15-clopro/Power_load_balancer /img_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15-clopro/Power_load_balancer /file/scr/terraform/bucket.tf" beforeDir="false" afterPath="$PROJECT_DIR$/15-clopro/Power_load_balancer /file/scr/terraform/bucket.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15-clopro/Power_load_balancer /readmy.md" beforeDir="false" afterPath="$PROJECT_DIR$/15-clopro/Power_load_balancer /readmy.md" afterDir="false" />
-    </list>
+    <list default="true" id="a882fe6d-6495-4184-8cb7-23dd20cf3555" name="Changes" comment="modification2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,11 +67,11 @@
       <recent name="$PROJECT_DIR$/monitoring/01-intro" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/15-clopro/Power_load_balancer /file/img" />
       <recent name="$PROJECT_DIR$/15-clopro/Cloud-providers_Networking/file/img" />
       <recent name="$PROJECT_DIR$/15-clopro/Cloud-providers_Networking" />
       <recent name="$PROJECT_DIR$/12-Kubernetes/kuber_2-3/file/img" />
       <recent name="$PROJECT_DIR$/12-Kubernetes/kuber_1-2/file/img" />
-      <recent name="$PROJECT_DIR$/12-Kubernetes/kuber_1-2/file" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -99,22 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691476219114</updated>
-    </task>
-    <task id="LOCAL-00024" summary="modification2">
-      <option name="closed" value="true" />
-      <created>1718605362849</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1718605362849</updated>
-    </task>
-    <task id="LOCAL-00025" summary="modification2">
-      <option name="closed" value="true" />
-      <created>1718609971899</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1718609971899</updated>
     </task>
     <task id="LOCAL-00026" summary="modification2">
       <option name="closed" value="true" />
@@ -492,7 +466,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725278488710</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="modification2">
+      <option name="closed" value="true" />
+      <created>1725285838031</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1725285838032</updated>
+    </task>
+    <task id="LOCAL-00074" summary="modification2">
+      <option name="closed" value="true" />
+      <created>1725285977752</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1725285977756</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
