@@ -82,7 +82,7 @@ aws s3 cp index.html s3://mysuperbacketname2021
 ###  Задание 1.
 1.
 
-[terraform](file%2Fterraform)
+
 Листинг команд:
 
 <details>
@@ -208,9 +208,7 @@ Do you want to perform these actions?
 
 
 Файлы terraform:
-- [object-storage.tf](/file/terraform/object-storage.tf)
-- [web-app.tftpl](/file//terraform/web-app.tftpl)
-- [outputs.tf](/file//terraform/outputs.tf)
+[terraform](file%2Fterraform)
 
 2.
 
