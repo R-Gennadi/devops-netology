@@ -1,29 +1,26 @@
-variable "service_account_id" {
-  type = string
+# Заменить на ID своего облака
+# https://console.cloud.yandex.ru/cloud?section=overview
+variable "yandex_cloud_id" {
+  default = "b1g8dolaql3are1tu770"
 }
 
-variable "token" {
-  type = string
+# Заменить на Folder своего облака
+# https://console.cloud.yandex.ru/cloud?section=overview
+variable "yandex_folder_id" {
+  default = "b1gtheioau4s71j2mu0u"
 }
 
-variable "access_key_id" {
-  type = string
+# Заменить на ID своего образа
+# ID можно узнать с помощью команды yc compute image list
+variable "centos-7-base" {
+  default = "fd87bh3i9m7udk0gpn0u"
 }
 
-variable "secret_key" {
-  type = string
+variable "zone" {
+  default = "ru-central1-a"  
 }
 
-variable "cloud_id" {
-  type = string
-}
-
-variable "folder_id" {
-  type = string
-}
-
-variable "default_zone" {
-  type        = string
-  default     = "ru-central1-a"
-  description = "https://cloud.yandex.ru/docs/overview/concepts/geo-scope"
+variable "yandex_cloud_auth" {
+  default = "..."
+  sensitive = true
 }
