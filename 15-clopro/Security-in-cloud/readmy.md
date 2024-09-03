@@ -80,6 +80,36 @@ aws s3 cp index.html s3://mysuperbacketname2021
 > ## Решения:
 >
 ###  Задание 1.
+1.
+Листинг команд:
+```sh
+D:\projects\devops-netology\assets\15-cloud-manage-3\terraform>terraform apply
+yandex_kms_symmetric_key.my_symmetric_key: Creating...
+yandex_kms_symmetric_key.my_symmetric_key: Creation complete after 2s [id=abjng61k8qhm706ucgta]
+yandex_storage_bucket.my_bucket_qazwsx: Creating...
+yandex_storage_bucket.my_bucket_qazwsx: Creation complete after 3s [id=my-bucket-qazwsx]
+yandex_storage_object.content_bg: Creating...
+yandex_storage_object.content_bg: Creation complete after 0s [id=test-img.jpg]
+local_file.index_html: Creating...
+local_file.index_html: Creation complete after 1s [id=e7b8ccdebc80d5cec518260c0a446256f56fec66]
+yandex_storage_object.index_html: Creating...
+yandex_storage_object.index_html: Creation complete after 0s [id=index.html]
 
+Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
 
+Outputs:
+
+yandex_storage_object_content_bg_url = "https://my-bucket-qazwsx.storage.yandexcloud.net/test-img.jpg"
+yandex_storage_object_index_html_url = "https://my-bucket-qazwsx.storage.yandexcloud.net/index.html"
+```
+
+Файлы terraform:
+- [object-storage.tf](/terraform/object-storage.tf)
+- [web-app.tftpl](/terraform/web-app.tftpl)
+- [outputs.tf](/terraform/outputs.tf)
+
+2.
+
+![img.png](file/img/img.png)
+![img_1.png](file/img/img_1.png)
 ------
