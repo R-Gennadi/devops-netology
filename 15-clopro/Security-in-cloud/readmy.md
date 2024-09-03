@@ -76,7 +76,7 @@ aws s3 cp index.html s3://mysuperbacketname2021
 
 ------
 </details>
-> 
+
 
 > ## Решения:
 >
