@@ -750,7 +750,7 @@ $ docker run --network host R-Gennadi/diploma:0.0.1
 ````bash
 $ docker login                                                
 Authenticating with existing credentials...
-WARNING! Your password will be stored unencrypted in /home/oleg/.docker/config.json.
+WARNING! Your password will be stored unencrypted in /home/rgen/.docker/config.json.
 Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
@@ -905,13 +905,13 @@ $ chmod u+x build.sh
 
 $ ls -la
 итого 32
-drwxr-xr-x 3 oleg oleg 4096 янв 19 08:14 .
-drwxr-xr-x 8 oleg oleg 4096 янв 19 08:17 ..
--rwxr--r-- 1 oleg oleg  679 янв 19 08:14 build.sh
--rw-r--r-- 1 oleg oleg 2273 янв 19 08:12 example.jsonnet
--rw-r--r-- 1 oleg oleg  287 янв 19 08:10 jsonnetfile.json
--rw-r--r-- 1 oleg oleg 5287 янв 19 08:16 jsonnetfile.lock.json
-drwxr-xr-x 3 oleg oleg 4096 янв 19 08:16 vendor
+drwxr-xr-x 3 rgen rgen 4096 ноя 19 08:14 .
+drwxr-xr-x 8 rgen rgen 4096 ноя 19 08:17 ..
+-rwxr--r-- 1 rgen rgen  679 ноя 19 08:14 build.sh
+-rw-r--r-- 1 rgen rgen 2273 ноя 19 08:12 example.jsonnet
+-rw-r--r-- 1 rgen rgen  287 ноя 19 08:10 jsonnetfile.json
+-rw-r--r-- 1 rgen rgen 5287 ноя 19 08:16 jsonnetfile.lock.json
+drwxr-xr-x 3 rgen rgen 4096 ноя 19 08:16 vendor
 ````
 
 Далее обновляем зависимости для "kube-prometheus":
@@ -965,7 +965,7 @@ go: downloading golang.org/x/sys v0.1.0
 $ ./files/build.sh monitoring.jsonnet 
 + set -o pipefail
 ++ pwd
-+ PATH=/run/media/oleg/Second/Netology/devops-diploma-yandexcloud/16-diploma-yc/kube-prometheus/tmp/bin:/opt/oracle/instantclient_21_7::/home/oleg/yandex-cloud/bin:/home/oleg/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/lib/jvm/amazon-corretto-11.0.16.9.1-linux-x64/bin:/usr/bin/qbec-linux-amd64:/home/oleg/go/bin
++ PATH=/run/media/rgen/Second/Netology/devops-diploma-yandexcloud/16-diploma-yc/kube-prometheus/tmp/bin:/opt/oracle/instantclient_21_7::/home/rgen/yandex-cloud/bin:/home/rgen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/lib/jvm/amazon-corretto-11.0.16.9.1-linux-x64/bin:/usr/bin/qbec-linux-amd64:/home/rgen/go/bin
 + rm -rf manifests
 + mkdir -p manifests/setup
 + jsonnet -J vendor -m manifests monitoring.jsonnet
